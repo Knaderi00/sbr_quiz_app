@@ -14,12 +14,10 @@ def render_tube_map(components: list[Component], active_component_key: str) -> N
         dot_opacity = "1" if is_active else "0.35"
         label_opacity = "1" if is_active else "0.55"
         parts.append(
-            f"""
-            <div class="atx-stop" style="--dot-color:{c.color}; --dot-opacity:{dot_opacity}; --label-opacity:{label_opacity}">
-              <div class="{dot_class}" style="background:{c.color};"></div>
-              <div class="{label_class}">{c.abbr}</div>
-            </div>
-            """
+            f"<div class='atx-stop' style='--dot-color:{c.color}; --dot-opacity:{dot_opacity}; --label-opacity:{label_opacity}'>"
+            f"<div class='{dot_class}' style='background:{c.color};'></div>"
+            f"<div class='{label_class}'>{c.abbr}</div>"
+            f"</div>"
         )
     parts.append("</div>")
     st.markdown("".join(parts), unsafe_allow_html=True)
