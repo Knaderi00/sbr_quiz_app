@@ -1,0 +1,44 @@
+{
+  "topics": [
+    {
+      "key": "ethics",
+      "label": "Ethics",
+      "color": "#6B7280"
+    },
+    {
+      "key": "income_tax_nic",
+      "label": "Income tax & NIC",
+      "color": "#2563EB"
+    },
+    {
+      "key": "capital_gains",
+      "label": "Capital gains",
+      "color": "#16A34A"
+    },
+    {
+      "key": "inheritance_tax",
+      "label": "Inheritance tax",
+      "color": "#7C3AED"
+    },
+    {
+      "key": "loss_reliefs",
+      "label": "Loss reliefs",
+      "color": "#DC2626"
+    },
+    {
+      "key": "corporation_tax",
+      "label": "Corporation tax",
+      "color": "#0EA5E9"
+    },
+    {
+      "key": "groups",
+      "label": "Groups",
+      "color": "#F59E0B"
+    },
+    {
+      "key": "vat",
+      "label": "VAT",
+      "color": "#DB2777"
+    }
+  ]
+}

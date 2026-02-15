@@ -1,0 +1,53 @@
+{
+  "components": [
+    {
+      "key": "definitions",
+      "label": "Definitions",
+      "abbr": "Def",
+      "order": 1,
+      "color": "#0EA5E9"
+    },
+    {
+      "key": "requirements",
+      "label": "Requirements",
+      "abbr": "Req",
+      "order": 2,
+      "color": "#22C55E"
+    },
+    {
+      "key": "exceptions",
+      "label": "Exceptions",
+      "abbr": "Exc",
+      "order": 3,
+      "color": "#F97316"
+    },
+    {
+      "key": "proformas",
+      "label": "Proformas",
+      "abbr": "Prof",
+      "order": 4,
+      "color": "#A855F7"
+    },
+    {
+      "key": "calculations",
+      "label": "Calculations",
+      "abbr": "Calc",
+      "order": 5,
+      "color": "#EAB308"
+    },
+    {
+      "key": "filing_requirements",
+      "label": "Filing requirements",
+      "abbr": "File",
+      "order": 6,
+      "color": "#14B8A6"
+    },
+    {
+      "key": "penalties",
+      "label": "Penalties",
+      "abbr": "Pen",
+      "order": 7,
+      "color": "#EF4444"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "priorities": [
+    { "key": "core", "label": "Core" },
+    { "key": "niche", "label": "Niche" },
+    { "key": "edge", "label": "Edge-case" }
+  ]
+}
