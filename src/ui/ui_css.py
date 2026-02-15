@@ -87,8 +87,9 @@ def apply_global_css() -> None:
   background: rgba(0,0,0,0.15);
 }
 .atx-pip.on {
-  background: rgba(0,0,0,0.65);
+  background: var(--pip-color, var(--component-color, #0EA5E9));
 }
+
 
 /* ---- Tube map ---- */
 .atx-tube {
