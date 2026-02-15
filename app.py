@@ -33,6 +33,21 @@ from src.ui.components.cloze_list import ClozeListSpec, ClozeListGap, render_clo
 from src.ui.components.proforma_drag import ProformaDragSpec, ProformaSlot, ProformaLine, render_proforma_drag
 from src.ui.ui_css import apply_global_css
 
+from src.ui.lookups import load_topics, load_components, load_priorities, topics_by_key, components_by_key
+
+@st.cache_data(show_spinner=False)
+def _ui_topics():
+    topics = load_topics()
+    return topics, topics_by_key(topics)
+
+@st.cache_data(show_spinner=False)
+def _ui_components():
+    comps = load_components()
+    return comps, components_by_key(comps)
+
+@st.cache_data(show_spinner=False)
+def _ui_priorities():
+    return load_priorities()
 
 # -----------------------------
 # Config
@@ -350,39 +365,52 @@ def _priority_label(priority_key: str) -> str:
 
 
 def _render_question_using_components(q: dict) -> Any:
-    """
-    Returns user_answer in the raw format expected by transitions.submit_answer(),
-    i.e. something serialisable and scoreable.
-    """
-    topic_obj = _get_topic_obj(str(q.get("topic", "")).strip())
-    component_obj = _get_component_obj(str(q.get("component", "")).strip())
-    all_components = _all_component_objs_for_tube()
+    # --- lookups (cached) ---
+    topics_list, topics_map = _ui_topics()
+    components_list, components_map = _ui_components()
+    priorities = _ui_priorities()
 
-    prompt = ""
+    # --- resolve topic/component objects from question payload ---
+    topic_val = str(q.get("topic", "")).strip()
+    topic_obj = next((t for t in topics_list if t.label == topic_val), None) or topics_map.get(topic_val)
+    if topic_obj is None:
+        st.error(f"Unknown topic: {topic_val}")
+        return None
+
+    component_key = str(q.get("component", "")).strip()
+    component_obj = components_map.get(component_key)
+    if component_obj is None:
+        st.error(f"Unknown component key: {component_key}")
+        return None
+
+    all_components = components_list  # for tube map
+
+    # --- priority label ---
+    priority_key = str(q.get("priority", "")).strip().lower()
+    priority_label = priorities.get(priority_key, priority_key.title())
+
+    # --- prompt text ---
     qtype = q.get("question_type")
-
-    # prompt text differs by type payload
     if qtype == "mcq_radio":
         prompt = str(q.get("prompt", "")).strip()
     elif qtype in ("cloze_ab", "cloze_list"):
         prompt = str(q.get("prompt_template", "")).strip()
-    elif qtype == "proforma_drag":
-        # title/instructions rendered in component itself; keep prompt short
-        prompt = str(q.get("instructions", "")).strip() or str(q.get("title", "")).strip()
     else:
-        prompt = str(q.get("prompt", "")).strip()
+        prompt = str(q.get("instructions", "")).strip() or str(q.get("title", "")).strip()
 
+    # --- card shell ---
     render_question_card_shell(
         topic=topic_obj,
         component=component_obj,
         all_components=all_components,
         subtopic=str(q.get("subtopic", "")).strip(),
         difficulty=int(q.get("difficulty", 1)),
-        priority_key=str(q.get("priority", "")).strip().lower(),
-        priority_label=_priority_label(str(q.get("priority", "")).strip()),
+        priority_key=priority_key,
+        priority_label=priority_label,
         prompt=prompt,
         source_ref=(str(q.get("source_ref", "")).strip() or None),
     )
+
 
     disabled = bool(st.session_state.get(K["answered"], False))
 
