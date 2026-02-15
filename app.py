@@ -31,6 +31,7 @@ from src.ui.components.mcq_radio import render_mcq_radio
 from src.ui.components.cloze_ab import ClozeABSpec, render_cloze_ab
 from src.ui.components.cloze_list import ClozeListSpec, ClozeListGap, render_cloze_list
 from src.ui.components.proforma_drag import ProformaDragSpec, ProformaSlot, ProformaLine, render_proforma_drag
+from src.ui.ui_css import apply_global_css
 
 
 # -----------------------------
@@ -521,6 +522,7 @@ def _render_question_using_components(q: dict) -> Any:
 
 def main():
     st.set_page_config(page_title="ATX Drill App", layout="wide")
+    apply_global_css() 
     init_session_state()
     _ensure_sequence_state_keys()
 
