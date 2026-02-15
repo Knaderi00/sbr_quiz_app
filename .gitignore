@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Local user data (attempt logs, caches)
+user_data/
+
+# OS
+.DS_Store
+Thumbs.db
