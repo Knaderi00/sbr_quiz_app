@@ -87,7 +87,7 @@ def apply_global_css() -> None:
   background: rgba(0,0,0,0.15);
 }
 .atx-pip.on {
-  background: var(--pip-color, var(--component-color, #0EA5E9));
+  background: var(--component-color, #0EA5E9));
 }
 
 
