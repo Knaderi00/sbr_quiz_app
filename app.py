@@ -22,6 +22,7 @@ from src.domain.selection import (
     filter_candidate_ids,
     compute_stats_from_attempt_rows,
     pick_next_question_id,
+    QuestionStats
 )
 from src.domain.scoring import score_attempt
 
@@ -283,13 +284,35 @@ def _select_question_payload(bank: dict, *, context: dict) -> dict:
     if not candidate_ids:
         raise ValueError("No questions found for selected topic/component.")
 
+    # ---- Build stats from attempts (persisted + in-session) ----
     persisted = _load_persisted_attempt_rows()
-    in_session = st.session_state.get(K["attempts"], [])
-    stats = compute_stats_from_attempt_rows([*persisted, *in_session])
+    in_session_attempts = st.session_state.get(K["attempts"], [])
+    stats = compute_stats_from_attempt_rows([*persisted, *in_session_attempts])
 
-    qid = pick_next_question_id(candidate_ids, stats, bias_weak_areas=bias_weak, rng=random.Random())
-    payload = _question_to_payload(bank[qid])
-    return payload
+    # ---- Merge exposure counts from exposure_log (display counts) ----
+    # exposure_log entries look like: {"exposure_id": "...", "question_id": "..."}
+    exposure_log = st.session_state.get("exposure_log", [])
+    for row in exposure_log:
+        qid = str(row.get("question_id", "")).strip()
+        if not qid:
+            continue
+
+        existing = stats.get(qid, QuestionStats(exposures=0, attempts=0, correct=0))
+        stats[qid] = QuestionStats(
+            exposures=existing.exposures + 1,
+            attempts=existing.attempts,
+            correct=existing.correct,
+        )
+
+    # ---- Pick next question with coverage-first behaviour ----
+    qid = pick_next_question_id(
+        candidate_ids,
+        stats,
+        bias_weak_areas=bias_weak,
+        rng=random.Random(),
+    )
+    return _question_to_payload(bank[qid])
+
 
 
 def _score_fn_factory(bank: dict):
@@ -553,6 +576,9 @@ def main():
     apply_global_css() 
     init_session_state()
     _ensure_sequence_state_keys()
+    st.session_state.setdefault("exposure_log", [])              # list of {exposure_id, question_id}
+    st.session_state.setdefault("last_logged_exposure_id", None) # guard
+
 
     bank = _load_bank_cached(str(DATA_DIR))
 
@@ -653,6 +679,14 @@ def main():
         return
 
     q = st.session_state[K["current_q"]]
+    exposure_id = st.session_state.get(K["current_exposure_id"])
+
+    if exposure_id and st.session_state["last_logged_exposure_id"] != exposure_id:
+        st.session_state["exposure_log"].append(
+            {"exposure_id": exposure_id, "question_id": q.get("question_id")}
+        )
+        st.session_state["last_logged_exposure_id"] = exposure_id
+
     user_answer = _render_question_using_components(q)
 
     col_a, col_b = st.columns([1, 1])
