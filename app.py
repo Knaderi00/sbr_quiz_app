@@ -710,7 +710,8 @@ def main():
                 "bias_weak": bias_weak,
             }
             next_question(lambda context: _select_question_payload(bank, context=context), context=ctx)
-
+            st.rerun()
+            
     # Feedback / solution
     if st.session_state[K["answered"]]:
         if st.session_state[K["is_correct"]]:
