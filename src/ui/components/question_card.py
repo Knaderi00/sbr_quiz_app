@@ -45,7 +45,7 @@ def render_question_card_shell(
 
     st.markdown(
         f"""
-<div class="atx-card" style="--topic-color:{topic.color};">
+<div class="atx-card" style="--topic-color:{topic.color}; --component-color:{component.color};">
   <div class="atx-card-header">
     <div class="atx-card-header-left">
       {''.join(left_bits)}
