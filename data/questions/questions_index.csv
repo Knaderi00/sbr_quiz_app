@@ -9,6 +9,6 @@ MCQ_CGA_REQ_EIS__002,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,mcq_
 MCQ_CGA_REQ_EIS__003,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,mcq_radio,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
 LIST_CGA_REQ_EIS__001,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,cloze_list,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
 LIST_CGA_REQ_EIS__002,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,cloze_list,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
-PF_ETH_REQ__001,Ethics,requirements,Safeguards,proforma_drag,3,0,0,0,0,0,143,168,199,199
+PF_ETH_REQ__001,Ethics,requirements,Safeguards,proforma_drag,3,0,Y,0,0,0,143,168,199,199
 PF_ITNIC_CALC_IR35__001,Income Tax & NIC,calculations,IR35 deemed payment calculation,proforma_drag,3,core,Y,ir35;deemed_payment;nic,proforma,1,143,168,199,199
 PF_CGA_REQ_EIS__001,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,proforma_drag,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
