@@ -101,7 +101,7 @@ def load_question_bank(data_dir: Path = DEFAULT_DATA_DIR) -> QuestionBank:
         validate_type_file(
             df_pf,
             file=str(data_dir / "questions_proforma_drag.csv"),
-            required_cols=["question_id", "title", "instructions", "slot_count", "lines_json"],
+            required_cols=["question_id", "title", "instructions", "slot_labels_json", "correct_line_ids_json", "lines_json"]
             index_ids=index_ids,
         )
         typed["proforma_drag"] = df_pf
@@ -246,18 +246,33 @@ def load_question_bank(data_dir: Path = DEFAULT_DATA_DIR) -> QuestionBank:
                 continue
             meta = idx.loc[qid]
 
-            slot_count = int(pd.to_numeric(r.get("slot_count", 1), errors="coerce") or 1)
-            slot_labels = []
-            slot_correct_line_ids = []
-            for n in range(1, slot_count + 1):
-                slot_labels.append(str(r.get(f"slot{n}_label", "")).strip())
-                slot_correct_line_ids.append(str(r.get(f"slot{n}_correct_line_id", "")).strip())
+            # NEW: scalable slot labels + correct ids as JSON
+            slot_labels_json = str(r.get("slot_labels_json", "")).strip()
+            correct_ids_json = str(r.get("correct_line_ids_json", "")).strip()
 
+            try:
+                slot_labels = json.loads(slot_labels_json) if slot_labels_json else []
+            except json.JSONDecodeError:
+                slot_labels = []
+
+            try:
+                slot_correct_line_ids = json.loads(correct_ids_json) if correct_ids_json else []
+            except json.JSONDecodeError:
+                slot_correct_line_ids = []
+
+            # slot_count derived (author doesn't need to maintain it)
+            slot_count = len(slot_labels) if slot_labels else len(slot_correct_line_ids)
+            slot_count = int(slot_count or 1)
+
+            # Keep them aligned to slot_count
+            slot_labels = [str(x).strip() for x in (slot_labels or [])][:slot_count]
+            slot_correct_line_ids = [str(x).strip() for x in (slot_correct_line_ids or [])][:slot_count]
+
+            # Existing: lines_json stays as-is
             lines_json = str(r.get("lines_json", "")).strip()
             try:
                 lines = json.loads(lines_json) if lines_json else []
             except json.JSONDecodeError:
-                # keep readable error in UI layer later; here we store empty list
                 lines = []
 
             bank[qid] = ProformaDragQuestion(
@@ -279,5 +294,6 @@ def load_question_bank(data_dir: Path = DEFAULT_DATA_DIR) -> QuestionBank:
                 lines=lines,
                 explanation=str(r.get("explanation", "")).strip(),
             )
+
 
     return bank
