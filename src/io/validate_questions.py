@@ -22,20 +22,27 @@ class QuestionsValidationError(Exception):
 
     @staticmethod
     def _format(details: List[ValidationErrorDetail]) -> str:
-        lines = ["Question bank validation failed:"]
+        def _ex_to_str(x) -> str:
+            if isinstance(x, str):
+                return x
+            try:
+                # nice for dict/list
+                return json.dumps(x, ensure_ascii=False)
+            except Exception:
+                # fallback for anything else
+                return repr(x)
+
+        lines = []
         for d in details:
-            bits = []
-            if d.file:
-                bits.append(f"file={d.file}")
-            if d.column:
-                bits.append(f"col={d.column}")
             prefix = f"- {d.message}"
-            if bits:
-                prefix += " (" + ", ".join(bits) + ")"
+            if getattr(d, "where", None):
+                prefix += f" ({d.where})"
             lines.append(prefix)
+
             if d.examples:
-                ex = "; ".join(d.examples[:5])
+                ex = "; ".join(_ex_to_str(x) for x in d.examples[:5])
                 lines.append(f"    examples: {ex}")
+
         return "\n".join(lines)
 
 
