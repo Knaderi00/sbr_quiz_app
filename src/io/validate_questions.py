@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from typing import Dict, List, Optional, Set
 
 import pandas as pd
-
+import json
 
 @dataclass(frozen=True)
 class ValidationErrorDetail:
