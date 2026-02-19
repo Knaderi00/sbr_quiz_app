@@ -194,6 +194,22 @@ def load_question_bank(data_dir: Path = DEFAULT_DATA_DIR) -> QuestionBank:
     # ---- Cloze List ----
     if "cloze_list" in typed:
         df = typed["cloze_list"].copy()
+
+        def _parse_options_cell(raw: str) -> list[str]:
+            s = (raw or "").strip()
+            if not s:
+                return []
+            # Preferred: JSON array string e.g. ["1","2","3"]
+            if s.startswith("[") and s.endswith("]"):
+                try:
+                    out = json.loads(s)
+                    if isinstance(out, list):
+                        return [str(x).strip() for x in out if str(x).strip()]
+                except json.JSONDecodeError:
+                    pass
+            # Fallback: legacy pipe format e.g. "A|B|C"
+            return [o.strip() for o in s.split("|") if o.strip()]
+    
         for _, r in df.iterrows():
             qid = str(r["question_id"])
             if qid not in index_ids:
@@ -206,9 +222,10 @@ def load_question_bank(data_dir: Path = DEFAULT_DATA_DIR) -> QuestionBank:
             allow_repeat = []
             for n in range(1, gap_count + 1):
                 raw_opts = str(r.get(f"gap{n}_options", "")).strip()
-                opts = [o.strip() for o in raw_opts.split("|") if o.strip()]
+                opts = _parse_options_cell(raw_opts)
                 options_by_gap.append(opts)
 
+                # keep correct as a string (and strip)
                 corr = str(r.get(f"gap{n}_correct", "")).strip()
                 correct_by_gap.append(corr)
 
