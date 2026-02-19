@@ -161,7 +161,9 @@ def load_question_bank(data_dir: Path = DEFAULT_DATA_DIR) -> QuestionBank:
             if qid not in index_ids:
                 continue
             meta = idx.loc[qid]
-            gap_count = int(pd.to_numeric(r["gap_count"], errors="coerce") or 1)
+            raw_gap_count = pd.to_numeric(r.get("gap_count", None), errors="coerce")
+            gap_count = int(raw_gap_count) if pd.notna(raw_gap_count) else 1
+
 
             correct_by_gap = []
             allow_repeat = []
@@ -215,7 +217,9 @@ def load_question_bank(data_dir: Path = DEFAULT_DATA_DIR) -> QuestionBank:
             if qid not in index_ids:
                 continue
             meta = idx.loc[qid]
-            gap_count = int(pd.to_numeric(r["gap_count"], errors="coerce") or 1)
+            raw_gap_count = pd.to_numeric(r.get("gap_count", None), errors="coerce")
+            gap_count = int(raw_gap_count) if pd.notna(raw_gap_count) else 1
+
 
             options_by_gap = []
             correct_by_gap = []
