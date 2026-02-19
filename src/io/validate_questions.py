@@ -114,13 +114,15 @@ def validate_index(df_index: pd.DataFrame, file: str = "questions_index.csv") ->
                     examples=dupes["question_id"].head(10).astype(str).tolist(),
                 )
             )
-
     if "difficulty" in df_index.columns:
         bad_rows = []
         for _, r in df_index[["question_id", "difficulty"]].iterrows():
             v = r["difficulty"]
-            if _is_blank(v):
-                continue  # allow blank while authoring
+
+            # allow blank/unset placeholders
+            if _is_blank(v) or str(v).strip() == "0":
+                continue
+
             n = _parse_int(v)
             if n is None or not (1 <= n <= 5):
                 bad_rows.append({"question_id": str(r["question_id"]), "difficulty": v})
@@ -131,9 +133,10 @@ def validate_index(df_index: pd.DataFrame, file: str = "questions_index.csv") ->
                     message="difficulty must be an integer 1–5 (or blank)",
                     file=file,
                     column="difficulty",
-                    examples=bad_rows[:10],  # dicts are fine now
+                    examples=bad_rows[:10],
                 )
             )
+
 
 
     if errors:
