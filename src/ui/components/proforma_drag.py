@@ -124,8 +124,7 @@ def render_proforma_drag(
     st.markdown("**Current order**")
     for i, lid in enumerate(st.session_state[_pool_key(question_id)], start=1):
         line = line_by_id[lid]
-        tag = " (distractor)" if line.is_distractor else ""
-        st.markdown(f"{i}. {line.text}{tag}")
+        st.markdown(f"{i}. {line.text}")
 
     ordered_pool = list(st.session_state[_pool_key(question_id)])
     selected = ordered_pool[: len(spec.slots)]
