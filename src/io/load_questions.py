@@ -101,7 +101,7 @@ def load_question_bank(data_dir: Path = DEFAULT_DATA_DIR) -> QuestionBank:
         validate_type_file(
             df_pf,
             file=str(data_dir / "questions_proforma_drag.csv"),
-            required_cols=["question_id", "title", "instructions", "slot_labels_json", "correct_line_ids_json", "lines_json"]
+            required_cols=["question_id", "title", "instructions", "slot_labels_json", "correct_line_ids_json", "lines_json"],
             index_ids=index_ids,
         )
         typed["proforma_drag"] = df_pf
