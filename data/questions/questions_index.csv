@@ -7,6 +7,4 @@ AB_ITNIC_DATE_001,Income tax & NIC,filing_requirements,Dates,cloze_ab,2,core,Y,,
 AB_IHT_XFER_001,Inheritance tax,definitions,Transfers,cloze_ab,2,core,Y,,Demo,1
 LIST_GROUPS_LOSS_001,Groups,requirements,Group relief,cloze_list,3,core,Y,,Demo,1
 LIST_CGT_BADR_001,Capital gains,requirements,BADR conditions,cloze_list,3,niche,Y,,Demo,1
-PF_LOSSREL_ORDER_001,Loss reliefs,proformas,Trading loss relief order,proforma_drag,4,core,Y,,Demo,1
-PF_VAT_NET_001,VAT,proformas,VAT return layout,proforma_drag,2,core,Y,,Demo,1
 PF_ETH_REQ__001,Ethics,requirements,Safeguards,proforma_drag,2,core,Y,,Demo,1
