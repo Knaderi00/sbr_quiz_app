@@ -1,10 +1,14 @@
-﻿question_id,topic,component,subtopic,question_type,difficulty,priority,active,tags,source_ref,version
-MCQ_ITNIC_RES_001,Income tax & NIC,requirements,Residence,mcq_radio,2,core,Y,,Cotton Eye Joe,1
-MCQ_CGT_PPR_001,Income tax & NIC,requirements,Private residence relief,mcq_radio,2,core,Y,,Demo,1
-MCQ_CT_CAPA_001,Income tax & NIC,requirements,Capital allowances,mcq_radio,3,core,Y,,Demo,1
-MCQ_VAT_SUP_001,VAT,definitions,Supply,mcq_radio,1,core,Y,,Demo,1
-AB_ITNIC_DATE_001,Income tax & NIC,filing_requirements,Dates,cloze_ab,2,core,Y,,Demo,1
-AB_IHT_XFER_001,Inheritance tax,definitions,Transfers,cloze_ab,2,core,Y,,Demo,1
-LIST_GROUPS_LOSS_001,Groups,requirements,Group relief,cloze_list,3,core,Y,,Demo,1
-LIST_CGT_BADR_001,Capital gains,requirements,BADR conditions,cloze_list,3,niche,Y,,Demo,1
-PF_ETH_REQ__001,Ethics,requirements,Safeguards,proforma_drag,2,core,Y,,Demo,1
+﻿question_id,topic,component,subtopic,question_type,difficulty,priority,active,tags,source_ref,version,mcq_n,ab_n,list_n,pf_n
+MCQ_ETH_DEF__001,Ethics,definitions,Fundamental principles,mcq_radio,0,0,Y,0,0,0,143,168,199,199
+MCQ_ETH_DEF__002,Ethics,definitions,Fundamental principles,mcq_radio,0,0,Y,0,0,0,143,168,199,199
+MCQ_ETH_DEF__003,Ethics,definitions,Fundamental principles,mcq_radio,0,0,Y,0,0,0,143,168,199,199
+MCQ_ETH_DEF__004,Ethics,definitions,Fundamental principles,mcq_radio,0,0,Y,0,0,0,143,168,199,199
+MCQ_ETH_DEF__005,Ethics,definitions,Fundamental principles,mcq_radio,0,0,Y,0,0,0,143,168,199,199
+MCQ_CGA_REQ_EIS__001,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,mcq_radio,medium,core,Y,eis;seis;vct,notes,1,143,168,199,199
+MCQ_CGA_REQ_EIS__002,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,mcq_radio,medium,core,Y,eis;seis;vct,notes,1,143,168,199,199
+MCQ_CGA_REQ_EIS__003,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,mcq_radio,medium,core,Y,eis;seis;vct,notes,1,143,168,199,199
+LIST_CGA_REQ_EIS__001,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,cloze_list,medium,core,Y,eis;seis;vct,notes,1,143,168,199,199
+LIST_CGA_REQ_EIS__002,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,cloze_list,medium,core,Y,eis;seis;vct,notes,1,143,168,199,199
+PF_ETH_REQ__001,Ethics,requirements,Safeguards,proforma_drag,0,0,0,0,0,0,143,168,199,199
+PF_ITNIC_CALC_IR35__001,Income Tax & NIC,calculations,IR35 deemed payment calculation,proforma_drag,medium,core,Y,ir35;deemed_payment;nic,proforma,1,143,168,199,199
+PF_CGA_REQ_EIS__001,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,proforma_drag,medium,core,Y,eis;seis;vct,notes,1,143,168,199,199
