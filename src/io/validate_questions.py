@@ -7,6 +7,16 @@ from typing import Dict, List, Optional, Set
 import pandas as pd
 import json
 
+def _is_blank(x) -> bool:
+    return x is None or (isinstance(x, float) and pd.isna(x)) or str(x).strip() == ""
+
+def _parse_int(x) -> Optional[int]:
+    try:
+        return int(str(x).strip())
+    except Exception:
+        return None
+
+
 @dataclass(frozen=True)
 class ValidationErrorDetail:
     message: str
@@ -26,24 +36,27 @@ class QuestionsValidationError(Exception):
             if isinstance(x, str):
                 return x
             try:
-                # nice for dict/list
                 return json.dumps(x, ensure_ascii=False)
             except Exception:
-                # fallback for anything else
                 return repr(x)
 
         lines = []
         for d in details:
-            prefix = f"- {d.message}"
-            if getattr(d, "where", None):
-                prefix += f" ({d.where})"
-            lines.append(prefix)
+            loc_bits = []
+            if d.file:
+                loc_bits.append(d.file)
+            if d.column:
+                loc_bits.append(d.column)
+            loc = f" ({':'.join(loc_bits)})" if loc_bits else ""
+
+            lines.append(f"- {d.message}{loc}")
 
             if d.examples:
                 ex = "; ".join(_ex_to_str(x) for x in d.examples[:5])
                 lines.append(f"    examples: {ex}")
 
         return "\n".join(lines)
+
 
 
 def _require_columns(df: pd.DataFrame, required: List[str], file: str) -> List[ValidationErrorDetail]:
@@ -103,16 +116,25 @@ def validate_index(df_index: pd.DataFrame, file: str = "questions_index.csv") ->
             )
 
     if "difficulty" in df_index.columns:
-        bad = df_index[~pd.to_numeric(df_index["difficulty"], errors="coerce").between(1, 5)]
-        if not bad.empty:
+        bad_rows = []
+        for _, r in df_index[["question_id", "difficulty"]].iterrows():
+            v = r["difficulty"]
+            if _is_blank(v):
+                continue  # allow blank while authoring
+            n = _parse_int(v)
+            if n is None or not (1 <= n <= 5):
+                bad_rows.append({"question_id": str(r["question_id"]), "difficulty": v})
+
+        if bad_rows:
             errors.append(
                 ValidationErrorDetail(
-                    message="difficulty must be an integer 1–5",
+                    message="difficulty must be an integer 1–5 (or blank)",
                     file=file,
                     column="difficulty",
-                    examples=bad[["question_id", "difficulty"]].head(10).astype(str).to_dict(orient="records"),
+                    examples=bad_rows[:10],  # dicts are fine now
                 )
             )
+
 
     if errors:
         raise QuestionsValidationError(errors)
