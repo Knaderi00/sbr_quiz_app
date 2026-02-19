@@ -83,6 +83,11 @@ PRIORITY_LABELS = {
     "edge": "Edge-case",
 }
 
+# -----------------------------
+# Welcome screen 
+# -----------------------------
+WELCOME_HEADING = "Welcome to the ATX Drill App"     # <- replace
+WELCOME_IMAGE_PATH = "src/ui/img/welcome.png"           # <- replace (relative path)
 
 # -----------------------------
 # Caching / loading
@@ -606,18 +611,26 @@ def main():
 
     if st.session_state[K["selected_mode"]] == "component_focus" and st.session_state[K["selected_topic"]]:
         comps = _available_components_for_topic(bank, st.session_state[K["selected_topic"]])
-        comp = st.sidebar.selectbox(
-            "Component",
-            options=["— Select —"] + comps,
-            index=0
-            if st.session_state[K["selected_component"]] is None
-            else (1 + comps.index(st.session_state[K["selected_component"]]))
-            if st.session_state[K["selected_component"]] in comps
-            else 0,
-        )
-        st.session_state[K["selected_component"]] = None if comp == "— Select —" else comp
+
+        if not comps:
+            st.sidebar.warning("No components with questions for this topic.")
+            st.session_state[K["selected_component"]] = None
+        else:
+            # Default to first available component if none set (or invalid)
+            current = st.session_state.get(K["selected_component"])
+            if current not in comps:
+                current = comps[0]
+                st.session_state[K["selected_component"]] = current
+
+            comp = st.sidebar.selectbox(
+                "Component",
+                options=comps,
+                index=comps.index(current),
+            )
+            st.session_state[K["selected_component"]] = comp
     else:
         st.session_state[K["selected_component"]] = None
+
 
     run_kind_label = st.sidebar.radio(
         "Run type",
@@ -636,11 +649,27 @@ def main():
         st.session_state["sequence_component_index"] = 0
         start_new_run(run_kind=st.session_state[K["run_kind"]], quiz_size=st.session_state[K["quiz_size"]])
 
-    # --- Guard: need topic ---
+    # --- Guard: need topic (welcome screen) ---
     if not st.session_state[K["selected_topic"]]:
         st.title("ATX Drill App")
-        st.info("Select a tax topic in the sidebar to begin.")
+
+        left, mid, right = st.columns([1, 2, 1])
+        with mid:
+            st.markdown(
+                f"<h2 style='text-align:center; margin-top: 1.5rem;'>{WELCOME_HEADING}</h2>",
+                unsafe_allow_html=True,
+            )
+            try:
+                st.image(WELCOME_IMAGE_PATH, use_container_width=True)
+            except Exception:
+                # non-fatal if image not present yet
+                pass
+
+            st.markdown("<div style='height: 1rem;'></div>", unsafe_allow_html=True)
+            st.info("Select a tax topic in the sidebar to begin.")
+
         return
+
 
     # --- Ensure we have a run + a question ---
     if st.session_state[K["current_q"]] is None and not st.session_state[K["run_completed"]]:
@@ -650,6 +679,13 @@ def main():
             start_new_run(run_kind="free_play")
 
         st.session_state["sequence_component_index"] = 0
+
+        # Ensure a usable component is set for component_focus mode
+        if st.session_state[K["selected_mode"]] == "component_focus":
+            comps = _available_components_for_topic(bank, st.session_state[K["selected_topic"]])
+            if comps and st.session_state.get(K["selected_component"]) not in comps:
+                st.session_state[K["selected_component"]] = comps[0]
+
 
         ctx = {
             "topic": st.session_state[K["selected_topic"]],
