@@ -120,7 +120,7 @@ def render_proforma_drag(
         current_pos = pool_ids.index(picked_id) + 1
 
     # Keep controls grouped on the left and aligned to the input baseline.
-    move_col1, move_col2, move_col3, move_col4, _spacer = st.columns([2.8, 1.3, 0.8, 1.0, 5.6], gap="small")
+    move_col1, move_col2, move_col3, move_col4, _spacer = st.columns([2.8, 1.3, 0.8, 1.3, 5.6], gap="small")
     with move_col1:
         target_pos = st.number_input(
             "Target position",
