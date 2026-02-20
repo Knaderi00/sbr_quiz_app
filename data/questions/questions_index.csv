@@ -4,22 +4,37 @@ MCQ_ETH_DEF__002,Ethics,definitions,Fundamental principles,mcq_radio,3,0,Y,0,0,0
 MCQ_ETH_DEF__003,Ethics,definitions,Fundamental principles,mcq_radio,3,0,Y,0,0,0,143,168,199,199
 MCQ_ETH_DEF__004,Ethics,definitions,Fundamental principles,mcq_radio,3,0,Y,0,0,0,143,168,199,199
 MCQ_ETH_DEF__005,Ethics,definitions,Fundamental principles,mcq_radio,3,0,Y,0,0,0,143,168,199,199
-MCQ_CGA_REQ_EIS__001,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,mcq_radio,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
-MCQ_CGA_REQ_EIS__002,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,mcq_radio,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
-MCQ_CGA_REQ_EIS__003,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,mcq_radio,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
-MCQ_ITNIC_REQ_PSC__001,Income tax & NIC,requirements,Personal service companies and IR35,mcq_radio,3,core,Y,psc;ir35;employment_status,notes,1,143,168,199,199
-MCQ_ITNIC_REQ_PSC__002,Income tax & NIC,requirements,Personal service companies and IR35,mcq_radio,3,core,Y,ir35;small_entity;deemed_salary,notes,1,143,168,199,199
-MCQ_ITNIC_REQ_PSC__003,Income tax & NIC,requirements,Personal service companies and IR35,mcq_radio,3,core,Y,ir35;sds;ddp;medium_large_entity,notes,1,143,168,199,199
-MCQ_ITNIC_REQ_SHS__001,Income tax & NIC,requirements,Employee share schemes (SAYE / CSOP / EMI / SIP),mcq_radio,3,core,Y,saye;share_schemes,notes,1,143,168,199,199
-MCQ_ITNIC_REQ_SHS__002,Income tax & NIC,requirements,Employee share schemes (SAYE / CSOP / EMI / SIP),mcq_radio,3,core,Y,csop;share_options,notes,1,143,168,199,199
-MCQ_ITNIC_REQ_SHS__003,Income tax & NIC,requirements,Employee share schemes (SAYE / CSOP / EMI / SIP),mcq_radio,3,core,Y,emi;discount;nic,notes,1,143,168,199,199
-LIST_CGA_REQ_EIS__001,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,cloze_list,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
-LIST_CGA_REQ_EIS__002,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,cloze_list,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
-LIST_ITNIC_REQ_PSC__001,Income tax & NIC,requirements,Personal service companies and IR35,cloze_list,3,core,Y,ir35;small_entity;deemed_salary,notes,1,143,168,199,199
-LIST_ITNIC_REQ_PSC__002,Income tax & NIC,requirements,Personal service companies and IR35,cloze_list,3,core,Y,ir35;medium_large_entity;sds;ddp,notes,1,143,168,199,199
-PF_ITNIC_REQ_PSC__001,Income tax & NIC,requirements,Personal service companies and IR35,proforma_drag,3,core,Y,psc;ir35;sds;ddp,notes,1,143,168,199,199
-LIST_ITNIC_REQ_SHS__001,Income tax & NIC,requirements,Employee share schemes (SAYE / CSOP / EMI / SIP),cloze_list,3,core,Y,csop;emi;limits,notes,1,143,168,199,199
-LIST_ITNIC_REQ_SHS__002,Income tax & NIC,requirements,Employee share schemes (SAYE / CSOP / EMI / SIP),cloze_list,3,core,Y,sip;hold_period;withdrawal,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EIS_001,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,mcq_radio,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
+MCQ_ITNIC_CALC_EIS_001,Income tax & NIC,calculations,EIS / SEIS / VCT reliefs,mcq_radio,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
+MCQ_ITNIC_DEF_EIS_001,Income tax & NIC,definitions,EIS / SEIS / VCT reliefs,mcq_radio,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
+MCQ_ITNIC_DEF_PSC_001,Income tax & NIC,definitions,Personal service companies and IR35,mcq_radio,3,core,Y,psc;ir35;employment_status,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_PSC_001,Income tax & NIC,requirements,Personal service companies and IR35,mcq_radio,3,core,Y,ir35;small_entity;deemed_salary,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_PSC_002,Income tax & NIC,requirements,Personal service companies and IR35,mcq_radio,3,core,Y,ir35;sds;ddp;medium_large_entity,notes,1,143,168,199,199
+MCQ_ITNIC_DEF_SHS_001,Income tax & NIC,definitions,Employee share schemes (SAYE / CSOP / EMI / SIP),mcq_radio,3,core,Y,saye;share_schemes,notes,1,143,168,199,199
+MCQ_ITNIC_DEF_SHS_002,Income tax & NIC,definitions,Employee share schemes (SAYE / CSOP / EMI / SIP),mcq_radio,3,core,Y,csop;share_options,notes,1,143,168,199,199
+MCQ_ITNIC_DEF_SHS_003,Income tax & NIC,definitions,Employee share schemes (SAYE / CSOP / EMI / SIP),mcq_radio,3,core,Y,emi;discount;nic,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_001,Income tax & NIC,requirements,EMI scheme rules (company),mcq_radio,3,core,Y,emi;company_rules,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_002,Income tax & NIC,requirements,EMI scheme rules (company),mcq_radio,3,core,Y,emi;company_rules,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_003,Income tax & NIC,requirements,EMI scheme rules (company),mcq_radio,3,core,Y,emi;company_rules,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_004,Income tax & NIC,requirements,EMI scheme rules (company),mcq_radio,3,core,Y,emi;company_rules,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_005,Income tax & NIC,requirements,EMI scheme rules (company),mcq_radio,3,core,Y,emi;company_rules,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_006,Income tax & NIC,requirements,EMI scheme rules (employees),mcq_radio,3,core,Y,emi;employee_rules,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_007,Income tax & NIC,requirements,EMI scheme rules (employees),mcq_radio,3,core,Y,emi;employee_rules,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_008,Income tax & NIC,requirements,EMI scheme rules (shares),mcq_radio,3,core,Y,emi;share_conditions,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_009,Income tax & NIC,requirements,EMI scheme rules (limits),mcq_radio,3,core,Y,emi;limits,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_010,Income tax & NIC,requirements,EMI scheme rules (limits),mcq_radio,3,core,Y,emi;limits,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_011,Income tax & NIC,requirements,EMI scheme rules (limits),mcq_radio,3,core,Y,emi;limits,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_012,Income tax & NIC,requirements,EMI scheme rules (limits),mcq_radio,3,core,Y,emi;limits;interaction,notes,1,143,168,199,199
+LIST_ITNIC_REQ_EIS_001,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,cloze_list,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
+LIST_ITNIC_REQ_EIS_002,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,cloze_list,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
+LIST_ITNIC_REQ_PSC_001,Income tax & NIC,requirements,Personal service companies and IR35,cloze_list,3,core,Y,ir35;small_entity;deemed_salary,notes,1,143,168,199,199
+LIST_ITNIC_REQ_PSC_002,Income tax & NIC,requirements,Personal service companies and IR35,cloze_list,3,core,Y,ir35;medium_large_entity;sds;ddp,notes,1,143,168,199,199
+LIST_ITNIC_REQ_SHS_001,Income tax & NIC,requirements,Employee share schemes terminology,cloze_list,3,core,Y,share_options;terminology,notes,1,143,168,199,199
+LIST_ITNIC_REQ_SHS_002,Income tax & NIC,requirements,Employee share schemes (SAYE / CSOP / EMI / SIP),cloze_list,3,core,Y,csop;emi;limits,notes,1,143,168,199,199
+LIST_ITNIC_REQ_SHS_003,Income tax & NIC,requirements,Employee share schemes (SAYE / CSOP / EMI / SIP),cloze_list,3,core,Y,sip;hold_period;withdrawal,notes,1,143,168,199,199
 PF_ETH_REQ__001,Ethics,requirements,Safeguards,proforma_drag,3,0,Y,0,0,0,143,168,199,199
-PF_ITNIC_CALC_IR35__001,Income tax & NIC,proformas,IR35 deemed payment calculation,proforma_drag,3,core,Y,ir35;deemed_payment;nic,proforma,1,143,168,199,199
-PF_CGA_REQ_EIS__001,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,proforma_drag,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
+PF_ITNIC_PF_IR35_001,Income tax & NIC,proformas,IR35 deemed payment calculation,proforma_drag,3,core,Y,ir35;deemed_payment;nic,proforma,1,143,168,199,199
+PF_ITNIC_REQ_EIS_001,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,proforma_drag,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
+PF_ITNIC_REQ_PSC_001,Income tax & NIC,requirements,Personal service companies and IR35,proforma_drag,3,core,Y,psc;ir35;sds;ddp,notes,1,143,168,199,199
+PF_ITNIC_REQ_PSC_002,Income tax & NIC,requirements,Personal service companies and IR35,proforma_drag,3,core,Y,psc;ir35;sds;ddp,notes,1,143,168,199,199
+PF_ITNIC_PF_ITCOMP_001,Income tax & NIC,proformas,Income tax payable computation (individual),proforma_drag,3,core,Y,it-computation,image-proforma,1,143,168,199,199
