@@ -119,7 +119,8 @@ def render_proforma_drag(
     if picked_id is not None and picked_id in pool_ids:
         current_pos = pool_ids.index(picked_id) + 1
 
-    move_col1, move_col2, move_col3, move_col4 = st.columns([2, 1, 1, 1])
+    # Keep controls grouped on the left and aligned to the input baseline.
+    move_col1, move_col2, move_col3, move_col4, _spacer = st.columns([2.8, 0.8, 0.8, 1.0, 5.6], gap="small")
     with move_col1:
         target_pos = st.number_input(
             "Target position",
@@ -131,19 +132,27 @@ def render_proforma_drag(
             key=f"proforma_drag::{question_id}::target_pos",
             help="Enter the row number to move the selected line to.",
         )
+
+    def _align_button_row() -> None:
+        # Nudge button columns down so buttons align with the number input control row.
+        st.markdown("<div style='height: 1.9rem;'></div>", unsafe_allow_html=True)
+
     with move_col2:
+        _align_button_row()
         move_to_position = st.button(
             "Move",
             disabled=disabled or picked_id is None or not pool_ids,
             key=f"proforma_drag::{question_id}::move_to_position",
         )
     with move_col3:
+        _align_button_row()
         move_to_top = st.button(
             "Top",
             disabled=disabled or picked_id is None or not pool_ids,
             key=f"proforma_drag::{question_id}::move_to_top",
         )
     with move_col4:
+        _align_button_row()
         move_to_bottom = st.button(
             "Bottom",
             disabled=disabled or picked_id is None or not pool_ids,
@@ -163,6 +172,7 @@ def render_proforma_drag(
             moved = pool_ids.pop(old_idx)
             pool_ids.insert(new_idx, moved)
             st.session_state[_pool_key(question_id)] = pool_ids
+
 
     # Show ordered pool
     st.markdown("**Current order**")
