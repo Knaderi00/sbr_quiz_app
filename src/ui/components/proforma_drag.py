@@ -35,7 +35,6 @@ class ProformaDragSpec:
 def _pool_key(question_id: str) -> str:
     return f"proforma_drag::{question_id}::pool_order"
 
-
 def render_proforma_drag(
     *,
     question_id: str,
@@ -75,11 +74,6 @@ def render_proforma_drag(
     st.markdown("---")
     st.markdown("**Lines pool (reorder; top lines fill the proforma)**")
 
-    # Streamlit-native reorder UX: use multiselect + up/down buttons as MVP
-    # This avoids external components but still allows "moving lines".
-    # Selected list represents the current ordered pool.
-    ordered_texts = [f"{line_by_id[i].text}" for i in ordered_ids]
-
     # Store order in session_state via key; Streamlit will persist it
     # We display as a selectbox to pick a line, then up/down to reorder.
     if _pool_key(question_id) not in st.session_state:
@@ -92,19 +86,18 @@ def render_proforma_drag(
     pool_ids: List[str] = list(st.session_state[_pool_key(question_id)])
 
     # Pick a line to move
-    display_options = [line_by_id[i].text for i in pool_ids]
-    picked_text = st.selectbox(
+    display_options = [f"{idx}. {line_by_id[line_id].text}" for idx, line_id in enumerate(pool_ids, start=1)]
+    picked_option = st.selectbox(
         "Select a line to move",
         options=display_options,
         index=0 if display_options else 0,
         disabled=disabled or not display_options,
-        key=f"proforma_drag::{question_id}::picked_text",
+        key=f"proforma_drag::{question_id}::picked_option",
     )
     picked_id = None
-    for i in pool_ids:
-        if line_by_id[i].text == picked_text:
-            picked_id = i
-            break
+    if picked_option and display_options:
+        picked_idx = display_options.index(picked_option)
+        picked_id = pool_ids[picked_idx]
 
     col1, col2, col3 = st.columns([1, 1, 3])
     with col1:
@@ -119,6 +112,57 @@ def render_proforma_drag(
         if down and idx < len(pool_ids) - 1:
             pool_ids[idx + 1], pool_ids[idx] = pool_ids[idx], pool_ids[idx + 1]
         st.session_state[_pool_key(question_id)] = pool_ids
+
+    # Faster movement for long proformas: move selected line directly to position N.
+    st.markdown("**Move selected line to position**")
+    current_pos = 1
+    if picked_id is not None and picked_id in pool_ids:
+        current_pos = pool_ids.index(picked_id) + 1
+
+    move_col1, move_col2, move_col3, move_col4 = st.columns([2, 1, 1, 1])
+    with move_col1:
+        target_pos = st.number_input(
+            "Target position",
+            min_value=1,
+            max_value=max(1, len(pool_ids)),
+            value=current_pos,
+            step=1,
+            disabled=disabled or picked_id is None or not pool_ids,
+            key=f"proforma_drag::{question_id}::target_pos",
+            help="Enter the row number to move the selected line to.",
+        )
+    with move_col2:
+        move_to_position = st.button(
+            "Move",
+            disabled=disabled or picked_id is None or not pool_ids,
+            key=f"proforma_drag::{question_id}::move_to_position",
+        )
+    with move_col3:
+        move_to_top = st.button(
+            "Top",
+            disabled=disabled or picked_id is None or not pool_ids,
+            key=f"proforma_drag::{question_id}::move_to_top",
+        )
+    with move_col4:
+        move_to_bottom = st.button(
+            "Bottom",
+            disabled=disabled or picked_id is None or not pool_ids,
+            key=f"proforma_drag::{question_id}::move_to_bottom",
+        )
+
+    if picked_id is not None and (move_to_position or move_to_top or move_to_bottom):
+        old_idx = pool_ids.index(picked_id)
+        if move_to_top:
+            new_idx = 0
+        elif move_to_bottom:
+            new_idx = len(pool_ids) - 1
+        else:
+            new_idx = max(0, min(len(pool_ids) - 1, int(target_pos) - 1))
+
+        if new_idx != old_idx:
+            moved = pool_ids.pop(old_idx)
+            pool_ids.insert(new_idx, moved)
+            st.session_state[_pool_key(question_id)] = pool_ids
 
     # Show ordered pool
     st.markdown("**Current order**")
