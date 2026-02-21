@@ -25,6 +25,21 @@ MCQ_ITNIC_REQ_EMI_009,Income tax & NIC,requirements,EMI scheme rules (limits),mc
 MCQ_ITNIC_REQ_EMI_010,Income tax & NIC,requirements,EMI scheme rules (limits),mcq_radio,3,core,Y,emi;limits,notes,1,143,168,199,199
 MCQ_ITNIC_REQ_EMI_011,Income tax & NIC,requirements,EMI scheme rules (limits),mcq_radio,3,core,Y,emi;limits,notes,1,143,168,199,199
 MCQ_ITNIC_REQ_EMI_012,Income tax & NIC,requirements,EMI scheme rules (limits),mcq_radio,3,core,Y,emi;limits;interaction,notes,1,143,168,199,199
+MCQ_CGT_REQ_RESDOM_001,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,residency|auto_overseas,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_RESDOM_002,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,residency|auto_overseas,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_RESDOM_003,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,residency|auto_uk,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_RESDOM_004,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,residency|ties,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_RESDOM_005,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,domicile|types,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_RESDOM_006,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,deemed_domicile|fukdr,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_RESDOM_007,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,deemed_domicile|long_term,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_RESDOM_008,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,deemed_domicile|april2017,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_SPLITYR_001,Capital gains,requirements,Split-year treatment,mcq_radio,3,core,Y,split_year|overview,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_SPLITYR_002,Capital gains,requirements,Split-year treatment,mcq_radio,3,core,Y,split_year|leaving,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_SPLITYR_003,Capital gains,requirements,Split-year treatment,mcq_radio,3,core,Y,split_year|leaving_spouse,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_SPLITYR_004,Capital gains,requirements,Split-year treatment,mcq_radio,3,core,Y,split_year|leaving_ties,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_SPLITYR_005,Capital gains,requirements,Split-year treatment,mcq_radio,3,core,Y,split_year|coming_home,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_SPLITYR_006,Capital gains,requirements,Split-year treatment,mcq_radio,3,core,Y,split_year|coming_work,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_SPLITYR_007,Capital gains,requirements,Split-year treatment,mcq_radio,3,core,Y,split_year|returning,notes_user,1,143,168,199,199
 AB_ITNIC_REQ_INVSCHEME_001,Income tax & NIC,requirements,EIS/SEIS/VCT,cloze_ab,3,0,Y,eis|seis|vct,user_notes,1,143,168,199,199
 AB_ITNIC_REQ_INVSCHEME_002,Income tax & NIC,requirements,EIS/SEIS/VCT,cloze_ab,3,0,Y,eis|conditions,user_notes,1,143,168,199,199
 AB_ITNIC_REQ_INVSCHEME_003,Income tax & NIC,requirements,EIS/SEIS/VCT,cloze_ab,3,0,Y,eis|withdrawal,user_notes,1,143,168,199,199
@@ -78,6 +93,18 @@ LIST_ITNIC_REQ_PSC_002,Income tax & NIC,requirements,Personal service companies 
 LIST_ITNIC_REQ_SHS_001,Income tax & NIC,requirements,Employee share schemes terminology,cloze_list,3,core,Y,share_options;terminology,notes,1,143,168,199,199
 LIST_ITNIC_REQ_SHS_002,Income tax & NIC,requirements,Employee share schemes (SAYE / CSOP / EMI / SIP),cloze_list,3,core,Y,csop;emi;limits,notes,1,143,168,199,199
 LIST_ITNIC_REQ_SHS_003,Income tax & NIC,requirements,Employee share schemes (SAYE / CSOP / EMI / SIP),cloze_list,3,core,Y,sip;hold_period;withdrawal,notes,1,143,168,199,199
+LIST_CGT_REQ_SPLITYR_001,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|overview,notes_user,1,143,168,199,199
+LIST_CGT_REQ_SPLITYR_002,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|leaving,notes_user,1,143,168,199,199
+LIST_CGT_REQ_SPLITYR_003,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|live_abroad,notes_user,1,143,168,199,199
+LIST_CGT_REQ_SPLITYR_004,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|coming_home,notes_user,1,143,168,199,199
+LIST_CGT_REQ_SPLITYR_005,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|coming_work,notes_user,1,143,168,199,199
+LIST_CGT_REQ_SPLITYR_006,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|returning,notes_user,1,143,168,199,199
+LIST_CGT_REQ_RESDOM_001,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,residency|auto_overseas,notes_user,1,143,168,199,199
+LIST_CGT_REQ_RESDOM_002,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,residency|auto_overseas,notes_user,1,143,168,199,199
+LIST_CGT_REQ_RESDOM_003,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,residency|auto_uk,notes_user,1,143,168,199,199
+LIST_CGT_REQ_RESDOM_004,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,residency|ties,notes_user,1,143,168,199,199
+LIST_CGT_REQ_RESDOM_005,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,domicile|types,notes_user,1,143,168,199,199
+LIST_CGT_REQ_RESDOM_006,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,deemed_domicile|routes,notes_user,1,143,168,199,199
 PF_ETH_REQ__001,Ethics,requirements,Safeguards,proforma_drag,3,0,Y,0,0,0,143,168,199,199
 PF_ITNIC_PF_IR35_001,Income tax & NIC,proformas,IR35 deemed payment calculation,proforma_drag,3,core,Y,ir35;deemed_payment;nic,proforma,1,143,168,199,199
 PF_ITNIC_REQ_EIS_001,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,proforma_drag,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
