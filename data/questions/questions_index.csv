@@ -37,40 +37,40 @@ AB_ITNIC_REQ_INVSCHEME_009,Income tax & NIC,requirements,EIS/SEIS/VCT,cloze_ab,3
 AB_ITNIC_REQ_INVSCHEME_010,Income tax & NIC,requirements,EIS/SEIS/VCT,cloze_ab,3,0,Y,timing|reinvestment,user_notes,1,143,168,199,199
 AB_ITNIC_REQ_INVSCHEME_011,Income tax & NIC,requirements,EIS/SEIS/VCT,cloze_ab,3,0,Y,timing|seis,user_notes,1,143,168,199,199
 AB_ITNIC_REQ_INVSCHEME_012,Income tax & NIC,requirements,EIS/SEIS/VCT,cloze_ab,3,0,Y,eis|claims,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_001,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,saye|limits,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_002,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,saye|term,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_003,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,saye|tax,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_004,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,saye|completion,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_005,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,saye|disposal,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_006,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,csop|shares,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_007,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,csop|eligibility,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_008,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,csop|population,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_009,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,csop|window,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_010,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,csop|cap,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_011,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,csop|disposal,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_012,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,emi|purpose,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_013,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,emi|company,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_014,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,emi|company2,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_015,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,emi|employee,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_016,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,emi|ownership,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_017,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,emi|sharetype,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_018,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,emi|limits,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_019,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,emi|interactions,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_020,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,emi|targets,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_021,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,emi|discount,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_022,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,emi|nic|listed,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_023,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,emi|badr,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_024,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,sip|structure,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_025,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,sip|eligibility,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_026,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,sip|company,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_027,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,sip|free,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_028,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,sip|partnership,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_029,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,sip|matching,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_030,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,sip|dividends,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_031,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,sip|exit5,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_032,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,sip|exit3,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_033,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,sip|exit35,user_notes,1,143,168,199,199
-AB_ITNIC_UNK_EMPSHARESCHEME_034,Income tax & NIC,reliefs,Employee share schemes,cloze_ab,3,0,Y,compare|tax,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_001,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,saye|limits,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_002,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,saye|term,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_003,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,saye|tax,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_004,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,saye|completion,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_005,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,saye|disposal,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_006,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,csop|shares,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_007,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,csop|eligibility,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_008,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,csop|population,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_009,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,csop|window,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_010,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,csop|cap,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_011,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,csop|disposal,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_012,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|purpose,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_013,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|company,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_014,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|company2,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_015,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|employee,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_016,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|ownership,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_017,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|sharetype,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_018,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|limits,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_019,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|interactions,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_020,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|targets,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_021,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|discount,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_022,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|nic|listed,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_023,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|badr,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_024,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|structure,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_025,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|eligibility,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_026,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|company,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_027,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|free,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_028,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|partnership,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_029,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|matching,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_030,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|dividends,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_031,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|exit5,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_032,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|exit3,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_033,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|exit35,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_034,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,compare|tax,user_notes,1,143,168,199,199
 LIST_ITNIC_REQ_EIS_001,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,cloze_list,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
 LIST_ITNIC_REQ_EIS_002,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,cloze_list,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
 LIST_ITNIC_REQ_PSC_001,Income tax & NIC,requirements,Personal service companies and IR35,cloze_list,3,core,Y,ir35;small_entity;deemed_salary,notes,1,143,168,199,199
