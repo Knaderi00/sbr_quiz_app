@@ -40,6 +40,14 @@ MCQ_CGT_REQ_SPLITYR_004,Capital gains,requirements,Split-year treatment,mcq_radi
 MCQ_CGT_REQ_SPLITYR_005,Capital gains,requirements,Split-year treatment,mcq_radio,3,core,Y,split_year|coming_home,notes_user,1,143,168,199,199
 MCQ_CGT_REQ_SPLITYR_006,Capital gains,requirements,Split-year treatment,mcq_radio,3,core,Y,split_year|coming_work,notes_user,1,143,168,199,199
 MCQ_CGT_REQ_SPLITYR_007,Capital gains,requirements,Split-year treatment,mcq_radio,3,core,Y,split_year|returning,notes_user,1,143,168,199,199
+MCQ_IHT_REQ_DOMICILE_001,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|deemed_domicile|overview,image_notes,1,143,168,199,199
+MCQ_IHT_REQ_DOMICILE_002,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|three_year,image_notes,1,143,168,199,199
+MCQ_IHT_REQ_DOMICILE_003,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|fukdi,image_notes,1,143,168,199,199
+MCQ_IHT_REQ_DOMICILE_004,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|residence_15_20,image_notes,1,143,168,199,199
+MCQ_IHT_REQ_DOMICILE_005,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|residence_1of4,image_notes,1,143,168,199,199
+MCQ_IHT_REQ_DOMICILE_006,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|comparison,image_notes,1,143,168,199,199
+MCQ_IHT_REQ_DOMICILE_007,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|fukdi|elements,image_notes,1,143,168,199,199
+MCQ_IHT_REQ_DOMICILE_008,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|trigger_time,image_notes,1,143,168,199,199
 AB_ITNIC_REQ_INVSCHEME_001,Income tax & NIC,requirements,EIS/SEIS/VCT,cloze_ab,3,0,Y,eis|seis|vct,user_notes,1,143,168,199,199
 AB_ITNIC_REQ_INVSCHEME_002,Income tax & NIC,requirements,EIS/SEIS/VCT,cloze_ab,3,0,Y,eis|conditions,user_notes,1,143,168,199,199
 AB_ITNIC_REQ_INVSCHEME_003,Income tax & NIC,requirements,EIS/SEIS/VCT,cloze_ab,3,0,Y,eis|withdrawal,user_notes,1,143,168,199,199
@@ -105,6 +113,12 @@ LIST_CGT_REQ_RESDOM_003,Capital gains,requirements,"Residency, domicile and deem
 LIST_CGT_REQ_RESDOM_004,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,residency|ties,notes_user,1,143,168,199,199
 LIST_CGT_REQ_RESDOM_005,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,domicile|types,notes_user,1,143,168,199,199
 LIST_CGT_REQ_RESDOM_006,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,deemed_domicile|routes,notes_user,1,143,168,199,199
+LIST_IHT_REQ_DEEMDOM_001,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|overview,image_notes,1,143,168,199,199
+LIST_IHT_REQ_DEEMDOM_002,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|three_year,image_notes,1,143,168,199,199
+LIST_IHT_REQ_DEEMDOM_003,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|fukdi,image_notes,1,143,168,199,199
+LIST_IHT_REQ_DEEMDOM_004,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|uk_resident_route,image_notes,1,143,168,199,199
+LIST_IHT_REQ_DEEMDOM_005,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|comparison_windows,image_notes,1,143,168,199,199
+LIST_IHT_REQ_DEEMDOM_006,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|trigger_time,image_notes,1,143,168,199,199
 PF_ETH_REQ__001,Ethics,requirements,Safeguards,proforma_drag,3,0,Y,0,0,0,143,168,199,199
 PF_ITNIC_PF_IR35_001,Income tax & NIC,proformas,IR35 deemed payment calculation,proforma_drag,3,core,Y,ir35;deemed_payment;nic,proforma,1,143,168,199,199
 PF_ITNIC_REQ_EIS_001,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,proforma_drag,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
