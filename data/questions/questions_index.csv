@@ -99,7 +99,7 @@ LIST_ITNIC_REQ_EIS_002,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,cl
 LIST_ITNIC_REQ_PSC_001,Income tax & NIC,requirements,Personal service companies and IR35,cloze_list,3,core,Y,ir35;small_entity;deemed_salary,notes,1,143,168,199,199
 LIST_ITNIC_REQ_PSC_002,Income tax & NIC,requirements,Personal service companies and IR35,cloze_list,3,core,Y,ir35;medium_large_entity;sds;ddp,notes,1,143,168,199,199
 LIST_ITNIC_REQ_SHS_001,Income tax & NIC,requirements,Employee share schemes terminology,cloze_list,3,core,Y,share_options;terminology,notes,1,143,168,199,199
-LIST_ITNIC_REQ_SHS_002,Income tax & NIC,requirements,Employee share schemes (SAYE / CSOP / EMI / SIP),cloze_list,3,core,Y,csop;emi;limits,notes,1,143,168,199,199
+LIST_ITNIC_REQ_SHS_002,Income tax & NIC,requirements,Employee share schemes (SAYE / CSOP / EMI / Share Incentive Plan (SIP)),cloze_list,3,core,Y,csop;emi;limits,notes,1,143,168,199,199
 LIST_ITNIC_REQ_SHS_003,Income tax & NIC,requirements,Employee share schemes (SAYE / CSOP / EMI / SIP),cloze_list,3,core,Y,sip;hold_period;withdrawal,notes,1,143,168,199,199
 LIST_CGT_REQ_SPLITYR_001,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|overview,notes_user,1,143,168,199,199
 LIST_CGT_REQ_SPLITYR_002,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|leaving,notes_user,1,143,168,199,199
