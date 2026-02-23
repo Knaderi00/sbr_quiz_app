@@ -48,8 +48,80 @@ PF_ITNIC_PF_EIS_001,Income tax & NIC,proformas,EIS / SEIS / VCT reliefs,proforma
         ""is_distractor"": false
     }
 ]","This proforma captures the main EIS subscription conditions, the income tax relief mechanics and timing, and the key holding-period/disposal consequences described in your notes.",,,,,,,,,,,,
-PF_ITNIC_PF_PSC_001,Income tax & NIC,proformas,Personal service companies and IR35,proforma_drag,3,core,Y,psc;ir35;sds;ddp,notes,1,PSC,PF_ITNIC_PF_PSC,1,Medium/large PSC IR35 process,Drag the lines into the correct order describing the IR35 process for services provided by a PSC to a medium or large entity (whole-line matching only).,"[""1"",""2"",""3"",""4"",""5"",""6""]","[""S1"",""S2"",""S3"",""S4"",""S5"",""S6""]","[{""line_id"":""S1"",""text"":""Client determines whether IR35 rules apply (medium/large entity engagement)"",""is_distractor"":false},{""line_id"":""S2"",""text"":""Client issues a Status Determination Statement (SDS) with reasons"" ,""is_distractor"":false},{""line_id"":""S3"",""text"":""Individual can challenge the SDS before final payment; client must respond within 45 days"" ,""is_distractor"":false},{""line_id"":""S4"",""text"":""Client operates PAYE/NIC on the deemed direct payment (DDP) as if PSC were a direct employee"" ,""is_distractor"":false},{""line_id"":""S5"",""text"":""PSC receives the fee net of tax withheld by the client; the net fee is non-taxable to PSC"" ,""is_distractor"":false},{""line_id"":""S6"",""text"":""When PSC later pays salary/dividends, remuneration is free of PAYE/NIC up to the level of the DDP (to avoid double taxation)"" ,""is_distractor"":false},{""line_id"":""D1"",""text"":""PSC determines IR35 status and issues the SDS to the client"" ,""is_distractor"":true},{""line_id"":""D2"",""text"":""Employment allowance can be used to offset employer NIC on the DDP"" ,""is_distractor"":true}]"," for medium/large entities the client determines status and issues an SDS (with a 45-day challenge window), operates PAYE/NIC on the DDP, and the DDP is used to prevent double taxation when the PSC later remunerates the individual.",,,,,,,,,,,,Y
-PF_ITNIC_PF_PSC_002,Income tax & NIC,proformas,Personal service companies and IR35,proforma_drag,3,core,Y,psc;ir35;sds;ddp,notes,1,PSC,PF_ITNIC_PF_PSC,2,Medium/large PSC IR35 process,Drag the lines into the correct order for calculating the deemed direct payment for services provided by a PSC to a medium or large entity (whole-line matching only).,"[""1"",""2"",""3"",""4""]","[""S1"",""S2"",""S3"",""S4""]","[{""line_id"":""S1"",""text"":""Payment for services (net VAT)"",""is_distractor"":false},{""line_id"":""S2"",""text"":""(Direct cost of materials)"" ,""is_distractor"":false},{""line_id"":""S3"",""text"":""Allowable expenses"" ,""is_distractor"":false},{""line_id"":""S4"",""text"":""Deemed direct payment (DDP)"" ,""is_distractor"":false},{""line_id"":""D1"",""text"":""(Statutory 5%)"" ,""is_distractor"":true},{""line_id"":""D2"",""text"":""Employer's NIC 13.8/113.8"" ,""is_distractor"":true}]",Client will withold income tax and Class 1 Employee NICs on DDP as if the individual was an employee. PSC receives fee net of tax and drawings are net of tax up to the limit of the DDP,,,,,,,,,,,,
+PF_ITNIC_PF_PSC_001,Income tax & NIC,proformas,Personal service companies and IR35,proforma_drag,3,core,Y,psc;ir35;sds;ddp,notes,1,PSC,PF_ITNIC_PF_PSC,1,Medium/large PSC IR35 process,Drag the lines into the correct order describing the IR35 process for services provided by a PSC to a medium or large entity (whole-line matching only).,"[""1"",""2"",""3"",""4"",""5"",""6""]","[""S1"",""S2"",""S3"",""S4"",""S5"",""S6""]","[
+    {
+        ""line_id"": ""D1"",
+        ""text"": ""PSC determines IR35 status and issues the SDS to the client"",
+        ""is_distractor"": true
+    },
+    {
+        ""line_id"": ""S6"",
+        ""text"": ""When PSC later pays salary/dividends, remuneration is free of PAYE/NIC up to the level of the DDP (to avoid double taxation)"",
+        ""is_distractor"": false
+    },
+    {
+        ""line_id"": ""D2"",
+        ""text"": ""Employment allowance can be used to offset employer NIC on the DDP"",
+        ""is_distractor"": true
+    },
+    {
+        ""line_id"": ""S2"",
+        ""text"": ""Client issues a Status Determination Statement (SDS) with reasons"",
+        ""is_distractor"": false
+    },
+    {
+        ""line_id"": ""S5"",
+        ""text"": ""PSC receives the fee net of tax withheld by the client; the net fee is non-taxable to PSC"",
+        ""is_distractor"": false
+    },
+    {
+        ""line_id"": ""S3"",
+        ""text"": ""Individual can challenge the SDS before final payment; client must respond within 45 days"",
+        ""is_distractor"": false
+    },
+    {
+        ""line_id"": ""S1"",
+        ""text"": ""Client determines whether IR35 rules apply (medium/large entity engagement)"",
+        ""is_distractor"": false
+    },
+    {
+        ""line_id"": ""S4"",
+        ""text"": ""Client operates PAYE/NIC on the deemed direct payment (DDP) as if PSC were a direct employee"",
+        ""is_distractor"": false
+    }
+]"," for medium/large entities the client determines status and issues an SDS (with a 45-day challenge window), operates PAYE/NIC on the DDP, and the DDP is used to prevent double taxation when the PSC later remunerates the individual.",,,,,,,,,,,,Y
+PF_ITNIC_PF_PSC_002,Income tax & NIC,proformas,Personal service companies and IR35,proforma_drag,3,core,Y,psc;ir35;sds;ddp,notes,1,PSC,PF_ITNIC_PF_PSC,2,Medium/large PSC IR35 process,Drag the lines into the correct order for calculating the deemed direct payment for services provided by a PSC to a medium or large entity (whole-line matching only).,"[""1"",""2"",""3"",""4""]","[""S1"",""S2"",""S3"",""S4""]","[
+    {
+        ""line_id"": ""D1"",
+        ""text"": ""(Statutory 5%)"",
+        ""is_distractor"": true
+    },
+    {
+        ""line_id"": ""D2"",
+        ""text"": ""Employer's NIC 13.8/113.8"",
+        ""is_distractor"": true
+    },
+    {
+        ""line_id"": ""S2"",
+        ""text"": ""(Direct cost of materials)"",
+        ""is_distractor"": false
+    },
+    {
+        ""line_id"": ""S4"",
+        ""text"": ""Deemed direct payment (DDP)"",
+        ""is_distractor"": false
+    },
+    {
+        ""line_id"": ""S3"",
+        ""text"": ""Allowable expenses"",
+        ""is_distractor"": false
+    },
+    {
+        ""line_id"": ""S1"",
+        ""text"": ""Payment for services (net VAT)"",
+        ""is_distractor"": false
+    }
+]",Client will withold income tax and Class 1 Employee NICs on DDP as if the individual was an employee. PSC receives fee net of tax and drawings are net of tax up to the limit of the DDP,,,,,,,,,,,,
 PF_ITNIC_PF_ITCOMP_001,Income tax & NIC,proformas,Income tax payable computation (individual),proforma_drag,3,core,Y,it-computation,image-proforma,1,ITCOMP,PF_ITNIC_PF_ITCOMP,1,Income tax payable computation (individual),Drag each line into the correct order to build the full income tax payable computation.,"[""1"",""2"",""3"",""4"",""5"",""6"",""7"",""8"",""9"",""10"",""11"",""12"",""13"",""14"",""15"",""16"",""17"",""18"",""19"",""20"",""21"",""22"",""23"",""24"",""25"",""26"",""27"",""28"",""29"",""30"",""31"",""32""]","[""S1"",""S2"",""S3"",""S4"",""S5"",""S6"",""S7"",""S8"",""S9"",""S10"",""S11"",""S12"",""S13"",""S14"",""S15"",""S16"",""S17"",""S18"",""S19"",""S20"",""S21"",""S22"",""S23"",""S24"",""S25"",""S26"",""S27"",""S28"",""S29"",""S30"",""S31"",""S32""]","[{""line_id"":""S23"",""text"":""Income tax on DI (0/8.75/33.75/39.35%)"",""is_distractor"":false},{""line_id"":""S6"",""text"":""Bank interest received"",""is_distractor"":false},{""line_id"":""S31"",""text"":""Less tax deducted at source (PAYE/ trust tax credits/ certain interest/ REITs (20%))"",""is_distractor"":false},{""line_id"":""S3"",""text"":""Overseas property business income"",""is_distractor"":false},{""line_id"":""S26"",""text"":""- EIS/SEIS/VCT"",""is_distractor"":false},{""line_id"":""S14"",""text"":""Total Income"",""is_distractor"":false},{""line_id"":""S10"",""text"":""Interest in possession trust income"",""is_distractor"":false},{""line_id"":""S28"",""text"":""- Property business income finance costs"",""is_distractor"":false},{""line_id"":""S21"",""text"":""Income tax on NSI (20/40/+45%)"",""is_distractor"":false},{""line_id"":""D1"",""text"":""Capital gains tax payable"",""is_distractor"":true},{""line_id"":""S32"",""text"":""IT payable"",""is_distractor"":false},{""line_id"":""S18"",""text"":""Net Income (NI)"",""is_distractor"":false},{""line_id"":""S8"",""text"":""Dividends received"",""is_distractor"":false},{""line_id"":""S4"",""text"":""Interest from o/seas securities"",""is_distractor"":false},{""line_id"":""S16"",""text"":""Net Income before losses"",""is_distractor"":false},{""line_id"":""S2"",""text"":""Employment income"",""is_distractor"":false},{""line_id"":""S19"",""text"":""Less personal allowance (PA)"",""is_distractor"":false},{""line_id"":""S7"",""text"":""Interest on gilts/bonds etc"",""is_distractor"":false},{""line_id"":""S27"",""text"":""- Marriage allowance"",""is_distractor"":false},{""line_id"":""S20"",""text"":""Taxable Income"",""is_distractor"":false},{""line_id"":""S11"",""text"":""- From NSI or SI (×100/80)"" ,""is_distractor"":false},{""line_id"":""S1"",""text"":""Trading income"",""is_distractor"":false},{""line_id"":""S9"",""text"":""Discretionary trust income (×100/55)"" ,""is_distractor"":false},{""line_id"":""S22"",""text"":""Income tax on SI (0/20/40/+45%)"",""is_distractor"":false},{""line_id"":""S29"",""text"":""Less DTR"",""is_distractor"":false},{""line_id"":""S24"",""text"":""Annual allowance charge on excess pension contributions"",""is_distractor"":false},{""line_id"":""S30"",""text"":""Income tax liability)"",""is_distractor"":false},{""line_id"":""S25"",""text"":""Less tax reducers:"",""is_distractor"":false},{""line_id"":""S17"",""text"":""Losses"",""is_distractor"":false},{""line_id"":""S15"",""text"":""Less qualifying interest"",""is_distractor"":false},{""line_id"":""S5"",""text"":""Dividends from o/seas securities"",""is_distractor"":false},{""line_id"":""S13"",""text"":""UK property business income (REIT x 100/80"",""is_distractor"":false},{""line_id"":""S12"",""text"":""- From DI (×100/91.25)"" ,""is_distractor"":false},{""line_id"":""D2"",""text"":""Less Class 4 NIC"",""is_distractor"":true}]","1.	Trading income
 2.	Employment income
 3.	Overseas property business income
