@@ -662,10 +662,10 @@ def main():
         component_focus=st.session_state[K["selected_component"]],
     )
     subtopic_options = ["All subtopics", *subtopics]
-    current_subtopic = st.session_state.get(K["subtopic_state_key"])
+    current_subtopic = st.session_state.get(subtopic_state_key)
     if current_subtopic not in subtopics:
         current_subtopic = None
-        st.session_state[K["subtopic_state_key"]] = None
+        st.session_state[subtopic_state_key] = None
 
     current_subtopic_label = current_subtopic if current_subtopic else "All subtopics"
     selected_subtopic = st.sidebar.selectbox(
@@ -674,7 +674,7 @@ def main():
         index=subtopic_options.index(current_subtopic_label),
         disabled=not bool(subtopics),
     )
-    st.session_state[K["selected_subtopic"]] = None if selected_subtopic == "All subtopics" else selected_subtopic
+    st.session_state[subtopic_state_key] = None if selected_subtopic == "All subtopics" else selected_subtopic
 
     run_kind_label = st.sidebar.radio(
         "Run type",
@@ -735,7 +735,7 @@ def main():
             "topic": st.session_state[K["selected_topic"]],
             "mode": st.session_state[K["selected_mode"]],
             "component_focus": st.session_state[K["selected_component"]],
-            "subtopic": st.session_state[K["subtopic_state_key"]],
+            "subtopic": st.session_state[subtopic_state_key],
             "bias_weak": bias_weak,
         }
         next_question(lambda context: _select_question_payload(bank, context=context), context=ctx)
@@ -754,7 +754,7 @@ def main():
                 "topic": st.session_state[K["selected_topic"]],
                 "mode": st.session_state[K["selected_mode"]],
                 "component_focus": st.session_state[K["selected_component"]],
-                "subtopic": st.session_state[K["subtopic_state_key"]],
+                "subtopic": st.session_state[subtopic_state_key],
                 "bias_weak": bias_weak,
             }
             next_question(lambda context: _select_question_payload(bank, context=context), context=ctx)
@@ -789,7 +789,7 @@ def main():
                 "topic": st.session_state[K["selected_topic"]],
                 "mode": st.session_state[K["selected_mode"]],
                 "component_focus": st.session_state[K["selected_component"]],
-                "subtopic": st.session_state[K["subtopic_state_key"]],
+                "subtopic": st.session_state[subtopic_state_key],
                 "bias_weak": bias_weak,
             }
             next_question(lambda context: _select_question_payload(bank, context=context), context=ctx)
