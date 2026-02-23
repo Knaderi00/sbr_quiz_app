@@ -245,6 +245,27 @@ def _available_components_for_topic(bank: dict, topic: str) -> list[str]:
             available.append(comp)
     return available
 
+def _available_subtopics_for_scope(
+    bank: dict,
+    *,
+    topic: str,
+    mode: str,
+    component_focus: Optional[str],
+) -> list[str]:
+    if not topic:
+        return []
+
+    out: set[str] = set()
+    for q in bank.values():
+        if q.topic != topic:
+            continue
+        if mode == "component_focus" and component_focus and q.component != component_focus:
+            continue
+        subtopic = str(q.subtopic).strip()
+        if subtopic:
+            out.add(subtopic)
+
+    return sorted(out)
 
 def _current_component_for_run(bank: dict, topic: str, mode: str, component_focus: Optional[str]) -> Optional[str]:
     if not topic:
@@ -266,13 +287,14 @@ def _select_question_payload(bank: dict, *, context: dict) -> dict:
     topic = context["topic"]
     mode = context["mode"]
     component_focus = context.get("component_focus")
+    subtopic_filter = context.get("subtopic")
     bias_weak = bool(context.get("bias_weak", False))
 
     comp = _current_component_for_run(bank, topic, mode, component_focus)
     if not comp:
         raise ValueError("No component available for selection.")
 
-    candidate_ids = filter_candidate_ids(bank, topic=topic, component=comp)
+    candidate_ids = filter_candidate_ids(bank, topic=topic, component=comp, subtopic=subtopic_filter)
 
     # full-sequence fallback: try subsequent non-empty components
     if not candidate_ids and mode == "full_sequence":
@@ -281,7 +303,7 @@ def _select_question_payload(bank: dict, *, context: dict) -> dict:
         for j in range(idx + 1, len(available)):
             st.session_state["sequence_component_index"] = j
             comp2 = available[j]
-            candidate_ids = filter_candidate_ids(bank, topic=topic, component=comp2)
+            candidate_ids = filter_candidate_ids(bank, topic=topic, component=comp, subtopic=subtopic_filter)
             if candidate_ids:
                 comp = comp2
                 break
@@ -631,6 +653,26 @@ def main():
     else:
         st.session_state[K["selected_component"]] = None
 
+    subtopics = _available_subtopics_for_scope(
+        bank,
+        topic=st.session_state[K["selected_topic"]],
+        mode=st.session_state[K["selected_mode"]],
+        component_focus=st.session_state[K["selected_component"]],
+    )
+    subtopic_options = ["All subtopics", *subtopics]
+    current_subtopic = st.session_state.get(K["selected_subtopic"])
+    if current_subtopic not in subtopics:
+        current_subtopic = None
+        st.session_state[K["selected_subtopic"]] = None
+
+    current_subtopic_label = current_subtopic if current_subtopic else "All subtopics"
+    selected_subtopic = st.sidebar.selectbox(
+        "Subtopic",
+        options=subtopic_options,
+        index=subtopic_options.index(current_subtopic_label),
+        disabled=not bool(subtopics),
+    )
+    st.session_state[K["selected_subtopic"]] = None if selected_subtopic == "All subtopics" else selected_subtopic
 
     run_kind_label = st.sidebar.radio(
         "Run type",
@@ -691,6 +733,7 @@ def main():
             "topic": st.session_state[K["selected_topic"]],
             "mode": st.session_state[K["selected_mode"]],
             "component_focus": st.session_state[K["selected_component"]],
+            "subtopic": st.session_state[K["selected_subtopic"]],
             "bias_weak": bias_weak,
         }
         next_question(lambda context: _select_question_payload(bank, context=context), context=ctx)
@@ -709,6 +752,7 @@ def main():
                 "topic": st.session_state[K["selected_topic"]],
                 "mode": st.session_state[K["selected_mode"]],
                 "component_focus": st.session_state[K["selected_component"]],
+                "subtopic": st.session_state[K["selected_subtopic"]],
                 "bias_weak": bias_weak,
             }
             next_question(lambda context: _select_question_payload(bank, context=context), context=ctx)
@@ -743,6 +787,7 @@ def main():
                 "topic": st.session_state[K["selected_topic"]],
                 "mode": st.session_state[K["selected_mode"]],
                 "component_focus": st.session_state[K["selected_component"]],
+                "subtopic": st.session_state[K["selected_subtopic"]],
                 "bias_weak": bias_weak,
             }
             next_question(lambda context: _select_question_payload(bank, context=context), context=ctx)

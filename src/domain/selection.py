@@ -86,12 +86,15 @@ def filter_candidate_ids(
     bank: QuestionBank,
     topic: Optional[str] = None,
     component: Optional[str] = None,
+    subtopic: Optional[str] = None,
 ) -> List[str]:
     ids: List[str] = []
     for qid, q in bank.items():
         if topic and q.topic != topic:
             continue
         if component and q.component != component:
+            continue
+        if subtopic and q.subtopic != subtopic:
             continue
         ids.append(qid)
     return ids

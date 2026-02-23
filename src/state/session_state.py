@@ -15,6 +15,7 @@ K = {
     # Sidebar selections
     "selected_topic": "selected_topic",
     "selected_mode": "selected_mode",              # "component_focus" | "full_sequence"
+    "selected_subtopic": "selected_subtopic",      # optional filter across selected scope
     "selected_component": "selected_component",    # only if component_focus
     "run_kind": "run_kind",                        # "quiz" | "free_play"
     "quiz_size": "quiz_size",
@@ -56,6 +57,7 @@ def init_session_state() -> None:
     st.session_state.setdefault(K["selected_topic"], None)
     st.session_state.setdefault(K["selected_mode"], "component_focus")
     st.session_state.setdefault(K["selected_component"], None)
+    st.session_state.setdefault(K["selected_subtopic"], None)   
     st.session_state.setdefault(K["run_kind"], "quiz")
     st.session_state.setdefault(K["quiz_size"], 10)
 
