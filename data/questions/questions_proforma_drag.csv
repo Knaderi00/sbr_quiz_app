@@ -16,7 +16,7 @@ PF_ITNIC_PF_IR35_001,Income tax & NIC,proformas,IR35 deemed payment calculation,
 6. Gross amount of deemed payment (G)
 7. Employer's NIC on gross deemed payment (G x 13.8/113.8)
 8. Actual deemed payment to worker",,,,,,,,,,,,
-PF_ITNIC_PF_EIS_001,Income tax & NIC,proformas,EIS / SEIS / VCT reliefs,proforma_drag,3,core,Y,eis;seis;vct,notes,1,EIS,PF_ITNIC_PF_EIS,1,EIS investor checklist,Drag the statements into the most logical order for an individual making (and later exiting) a qualifying EIS investment,"[""1"", ""2"", ""3"", ""4"", ""5"", ""6"", ""7""]","[""S1"", ""S2"", ""S3"", ""S4"", ""S5"", ""S6"", ""S7""]","[
+PF_ITNIC_PF_EIS_001,Income tax & NIC,proformas,Tax efficient investments,proforma_drag,3,core,Y,eis;seis;vct,notes,1,EIS,PF_ITNIC_PF_EIS,1,EIS investor checklist,Drag the statements into the most logical order for an individual making (and later exiting) a qualifying EIS investment,"[""1"", ""2"", ""3"", ""4"", ""5"", ""6"", ""7""]","[""S1"", ""S2"", ""S3"", ""S4"", ""S5"", ""S6"", ""S7""]","[
     {
         ""line_id"": ""S7"",
         ""text"": ""Consider CGT position on disposal: after 3 years, gain is exempt; loss is allowable with cost reduced by net EIS relief not withdrawn"",
@@ -48,8 +48,8 @@ PF_ITNIC_PF_EIS_001,Income tax & NIC,proformas,EIS / SEIS / VCT reliefs,proforma
         ""is_distractor"": false
     },
     {
-        ""line_id"": ""S1"",
-        ""text"": ""Subscribe in cash for newly issued ordinary shares (irreedeemable and fully paid up)"",
+        ""line_id"": ""S2"",
+        ""text"": ""Subscribe *in cash* for newly issued ordinary shares, irreedeemable and *fully paid up*"",
         ""is_distractor"": false
     },
     {
@@ -58,14 +58,14 @@ PF_ITNIC_PF_EIS_001,Income tax & NIC,proformas,EIS / SEIS / VCT reliefs,proforma
         ""is_distractor"": false
     },
     {
-        ""line_id"": ""S2"",
+        ""line_id"": ""S1"",
         ""text"": ""Ensure the investor is not ‘connected’ (not an employee and does not own >30% share capital)"",
         ""is_distractor"": false
     }
 ]","This proforma captures the main EIS subscription conditions, the income tax relief mechanics and timing, and the key holding-period/disposal consequences.
 
-1. Subscribe in cash for newly issued ordinary shares (irreedeemable and fully paid up), 
-2. Ensure the investor is not ‘connected’ (not an employee and does not own >30% share capital), 
+1. Ensure the investor is not ‘connected’ (not an employee and does not own >30% share capital)
+2. Subscribe in cash for newly issued ordinary shares (irreedeemable and fully paid up), 
 3. At investment date, investor must not hold other shares in the company (except existing EIS/SEIS holdings), 
 4. Claim EIS income tax relief as a tax reducer (up to £1,000,000 subscriptions; lower of 30% subscription or IT liability), 
 5. Hold the shares for at least 3 years to avoid withdrawal of relief, 
