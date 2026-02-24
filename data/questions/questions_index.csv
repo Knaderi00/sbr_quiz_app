@@ -121,6 +121,7 @@ LIST_IHT_REQ_DEEMDOM_004,Inheritance tax,requirements,Deemed domicile (IHT vs CG
 LIST_IHT_REQ_DEEMDOM_005,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|comparison_windows,image_notes,1,142,168,199,199
 LIST_IHT_REQ_DEEMDOM_006,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|trigger_time,image_notes,1,142,168,199,199
 LIST_IHT_CALC_DTR_001,Inheritance tax,calculations,Double taxation relief,cloze_list,3,core,Y,iht:dtr,notes,1,142,168,199,199
+LIST_IHT_CALC_GIFTRESBEN_001,Inheritance tax,calculations,Valuations,cloze_list,3,core,Y,iht:gifts_reservation_benefit,notes,1,142,168,199,199
 PF_ETH_PF__001,Ethics,proformas,Safeguards,proforma_drag,3,0,Y,0,0,0,142,168,199,199
 PF_ITNIC_PF_IR35_001,Income tax & NIC,proformas,IR35 deemed payment calculation,proforma_drag,3,core,Y,ir35;deemed_payment;nic,proforma,1,142,168,199,199
 PF_ITNIC_PF_EIS_001,Income tax & NIC,proformas,Tax efficient investments,proforma_drag,3,core,Y,eis;seis;vct,notes,1,142,168,199,199
