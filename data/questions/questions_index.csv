@@ -1,130 +1,154 @@
 ﻿question_id,topic,component,subtopic,question_type,difficulty,priority,active,tags,source_ref,version,mcq_n,ab_n,list_n,pf_n
-MCQ_ETH_DEF__001,Ethics,definitions,Fundamental principles,mcq_radio,3,0,Y,0,0,0,142,168,199,199
-MCQ_ETH_DEF__002,Ethics,definitions,Fundamental principles,mcq_radio,3,0,Y,0,0,0,142,168,199,199
-MCQ_ETH_DEF__003,Ethics,definitions,Fundamental principles,mcq_radio,3,0,Y,0,0,0,142,168,199,199
-MCQ_ETH_DEF__004,Ethics,definitions,Fundamental principles,mcq_radio,3,0,Y,0,0,0,142,168,199,199
-MCQ_ETH_DEF__005,Ethics,definitions,Fundamental principles,mcq_radio,3,0,Y,0,0,0,142,168,199,199
-MCQ_ITNIC_REQ_EIS_001,Income tax & NIC,requirements,Tax efficient investments,mcq_radio,3,core,Y,eis;seis;vct,notes,1,142,168,199,199
-MCQ_ITNIC_CALC_EIS_001,Income tax & NIC,calculations,Tax efficient investments,mcq_radio,3,core,Y,eis;seis;vct,notes,1,142,168,199,199
-MCQ_ITNIC_T_EIS_001,Income tax & NIC,treatments,Tax efficient investments,mcq_radio,3,core,Y,eis;seis;vct,notes,1,142,168,199,199
-MCQ_ITNIC_P_PSC_001,Income tax & NIC,planning,Personal service companies and IR35,mcq_radio,3,core,Y,psc;ir35;employment_status,notes,1,142,168,199,199
-MCQ_ITNIC_T_PSC_001,Income tax & NIC,treatments,Personal service companies and IR35,mcq_radio,3,core,Y,ir35;small_entity;deemed_salary,notes,1,142,168,199,199
-MCQ_ITNIC_REQ_PSC_001,Income tax & NIC,requirements,Personal service companies and IR35,mcq_radio,3,core,Y,ir35;sds;ddp;medium_large_entity,notes,1,142,168,199,199
-MCQ_ITNIC_DEF_SHS_001,Income tax & NIC,definitions,Employee share schemes,mcq_radio,3,core,Y,saye;share_schemes,notes,1,142,168,199,199
-MCQ_ITNIC_DEF_SHS_002,Income tax & NIC,definitions,Employee share schemes,mcq_radio,3,core,Y,csop;share_options,notes,1,142,168,199,199
-MCQ_ITNIC_T_SHS_001,Income tax & NIC,treatments,Employee share schemes,mcq_radio,3,core,Y,emi;discount;nic,notes,1,142,168,199,199
-MCQ_ITNIC_REQ_EMI_001,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;company_rules,notes,1,142,168,199,199
-MCQ_ITNIC_REQ_EMI_002,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;company_rules,notes,1,142,168,199,199
-MCQ_ITNIC_REQ_EMI_003,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;company_rules,notes,1,142,168,199,199
-MCQ_ITNIC_REQ_EMI_004,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;company_rules,notes,1,142,168,199,199
-MCQ_ITNIC_REQ_EMI_005,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;company_rules,notes,1,142,168,199,199
-MCQ_ITNIC_REQ_EMI_006,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;employee_rules,notes,1,142,168,199,199
-MCQ_ITNIC_REQ_EMI_007,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;employee_rules,notes,1,142,168,199,199
-MCQ_ITNIC_REQ_EMI_008,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;share_conditions,notes,1,142,168,199,199
-MCQ_ITNIC_REQ_EMI_009,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;limits,notes,1,142,168,199,199
-MCQ_ITNIC_REQ_EMI_010,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;limits,notes,1,142,168,199,199
-MCQ_ITNIC_REQ_EMI_011,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;limits,notes,1,142,168,199,199
-MCQ_ITNIC_P_EMI_001,Income tax & NIC,planning,Employee share schemes,mcq_radio,3,core,Y,emi;limits;interaction,notes,1,142,168,199,199
-MCQ_CGT_REQ_RESDOM_001,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,residency|auto_overseas,notes_user,1,142,168,199,199
-MCQ_CGT_REQ_RESDOM_002,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,residency|auto_overseas,notes_user,1,142,168,199,199
-MCQ_CGT_REQ_RESDOM_003,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,residency|auto_uk,notes_user,1,142,168,199,199
-MCQ_CGT_REQ_RESDOM_004,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,residency|ties,notes_user,1,142,168,199,199
-MCQ_CGT_DEF_RESDOM_001,Capital gains,definitions,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,domicile|types,notes_user,1,142,168,199,199
-MCQ_CGT_REQ_RESDOM_005,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,deemed_domicile|fukdr,notes_user,1,142,168,199,199
-MCQ_CGT_REQ_RESDOM_006,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,deemed_domicile|long_term,notes_user,1,142,168,199,199
-MCQ_CGT_REQ_RESDOM_007,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,deemed_domicile|april2017,notes_user,1,142,168,199,199
-MCQ_CGT_P_SPLITYR_001,Capital gains,planning,Split-year treatment,mcq_radio,3,core,Y,split_year|overview,notes_user,1,142,168,199,199
-MCQ_CGT_P_SPLITYR_002,Capital gains,planning,Split-year treatment,mcq_radio,3,core,Y,split_year|leaving,notes_user,1,142,168,199,199
-MCQ_CGT_P_SPLITYR_003,Capital gains,planning,Split-year treatment,mcq_radio,3,core,Y,split_year|leaving_spouse,notes_user,1,142,168,199,199
-MCQ_CGT_P_SPLITYR_004,Capital gains,planning,Split-year treatment,mcq_radio,3,core,Y,split_year|leaving_ties,notes_user,1,142,168,199,199
-MCQ_CGT_REQ_SPLITYR_001,Capital gains,requirements,Split-year treatment,mcq_radio,3,core,Y,split_year|coming_home,notes_user,1,142,168,199,199
-MCQ_CGT_REQ_SPLITYR_002,Capital gains,requirements,Split-year treatment,mcq_radio,3,core,Y,split_year|coming_work,notes_user,1,142,168,199,199
-MCQ_CGT_P_SPLITYR_005,Capital gains,planning,Split-year treatment,mcq_radio,3,core,Y,split_year|returning,notes_user,1,142,168,199,199
-MCQ_IHT_REQ_DOMICILE_001,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|deemed_domicile|overview,image_notes,1,142,168,199,199
-MCQ_IHT_REQ_DOMICILE_002,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|three_year,image_notes,1,142,168,199,199
-MCQ_IHT_REQ_DOMICILE_003,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|fukdi,image_notes,1,142,168,199,199
-MCQ_IHT_REQ_DOMICILE_004,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|residence_15_20,image_notes,1,142,168,199,199
-MCQ_IHT_REQ_DOMICILE_005,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|residence_1of4,image_notes,1,142,168,199,199
-MCQ_IHT_REQ_DOMICILE_006,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|comparison,image_notes,1,142,168,199,199
-MCQ_IHT_REQ_DOMICILE_007,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|fukdi|elements,image_notes,1,142,168,199,199
-MCQ_IHT_REQ_DOMICILE_008,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|trigger_time,image_notes,1,142,168,199,199
-0,0,0,0,0,0,0,0,0,0,0,142,168,199,199
-AB_ITNIC_REQ_INVSCHEME_001,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,eis|seis|vct,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_INVSCHEME_002,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,eis|conditions,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_INVSCHEME_003,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,eis|withdrawal,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_INVSCHEME_004,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,eis|cgt,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_INVSCHEME_005,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,seis|limits,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_INVSCHEME_006,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,seis|criteria,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_INVSCHEME_007,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,vct|relief,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_INVSCHEME_008,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,vct|cgt,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_INVSCHEME_009,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,ordering|reducers,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_INVSCHEME_010,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,timing|reinvestment,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_INVSCHEME_011,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,timing|seis,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_INVSCHEME_012,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,eis|claims,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_001,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,saye|limits,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_002,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,saye|term,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_003,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,saye|tax,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_004,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,saye|completion,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_005,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,saye|disposal,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_006,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,csop|shares,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_007,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,csop|eligibility,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_008,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,csop|population,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_009,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,csop|window,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_010,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,csop|cap,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_011,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,csop|disposal,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_012,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|purpose,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_013,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|company,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_014,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|company2,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_015,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|employee,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_016,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|ownership,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_017,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|sharetype,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_018,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|limits,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_019,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|interactions,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_020,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|targets,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_021,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|discount,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_022,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|nic|listed,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_023,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|badr,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_024,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|structure,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_025,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|eligibility,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_026,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|company,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_027,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|free,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_028,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|partnership,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_029,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|matching,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_030,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|dividends,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_031,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|exit5,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_032,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|exit3,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_033,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|exit35,user_notes,1,142,168,199,199
-AB_ITNIC_REQ_EMPSHARESCHEME_034,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,compare|tax,user_notes,1,142,168,199,199
-LIST_ITNIC_REQ_EIS_001,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,cloze_list,3,core,Y,eis;seis;vct,notes,1,142,168,199,199
-LIST_ITNIC_REQ_EIS_002,Income tax & NIC,requirements,EIS / SEIS / VCT reliefs,cloze_list,3,core,Y,eis;seis;vct,notes,1,142,168,199,199
-LIST_ITNIC_REQ_PSC_001,Income tax & NIC,requirements,Personal service companies and IR35,cloze_list,3,core,Y,ir35;small_entity;deemed_salary,notes,1,142,168,199,199
-LIST_ITNIC_REQ_PSC_002,Income tax & NIC,requirements,Personal service companies and IR35,cloze_list,3,core,Y,ir35;medium_large_entity;sds;ddp,notes,1,142,168,199,199
-LIST_ITNIC_REQ_SHS_001,Income tax & NIC,requirements,Employee share schemes,cloze_list,3,core,Y,share_options;terminology,notes,1,142,168,199,199
-LIST_ITNIC_REQ_SHS_002,Income tax & NIC,requirements,Employee share schemes,cloze_list,3,core,Y,csop;emi;limits,notes,1,142,168,199,199
-LIST_ITNIC_REQ_SHS_003,Income tax & NIC,requirements,Employee share schemes,cloze_list,3,core,Y,sip;hold_period;withdrawal,notes,1,142,168,199,199
-LIST_CGT_REQ_SPLITYR_001,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|overview,notes_user,1,142,168,199,199
-LIST_CGT_REQ_SPLITYR_002,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|leaving,notes_user,1,142,168,199,199
-LIST_CGT_REQ_SPLITYR_003,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|live_abroad,notes_user,1,142,168,199,199
-LIST_CGT_REQ_SPLITYR_004,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|coming_home,notes_user,1,142,168,199,199
-LIST_CGT_REQ_SPLITYR_005,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|coming_work,notes_user,1,142,168,199,199
-LIST_CGT_REQ_SPLITYR_006,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|returning,notes_user,1,142,168,199,199
-LIST_CGT_REQ_RESDOM_001,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,residency|auto_overseas,notes_user,1,142,168,199,199
-LIST_CGT_REQ_RESDOM_002,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,residency|auto_overseas,notes_user,1,142,168,199,199
-LIST_CGT_REQ_RESDOM_003,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,residency|auto_uk,notes_user,1,142,168,199,199
-LIST_CGT_REQ_RESDOM_004,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,residency|ties,notes_user,1,142,168,199,199
-LIST_CGT_REQ_RESDOM_005,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,domicile|types,notes_user,1,142,168,199,199
-LIST_CGT_REQ_RESDOM_006,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,deemed_domicile|routes,notes_user,1,142,168,199,199
-LIST_IHT_REQ_DEEMDOM_001,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|overview,image_notes,1,142,168,199,199
-LIST_IHT_REQ_DEEMDOM_002,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|three_year,image_notes,1,142,168,199,199
-LIST_IHT_REQ_DEEMDOM_003,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|fukdi,image_notes,1,142,168,199,199
-LIST_IHT_REQ_DEEMDOM_004,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|uk_resident_route,image_notes,1,142,168,199,199
-LIST_IHT_REQ_DEEMDOM_005,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|comparison_windows,image_notes,1,142,168,199,199
-LIST_IHT_REQ_DEEMDOM_006,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|trigger_time,image_notes,1,142,168,199,199
-LIST_IHT_CALC_DTR_001,Inheritance tax,calculations,Double taxation relief,cloze_list,3,core,Y,iht:dtr,notes,1,142,168,199,199
-LIST_IHT_CALC_GIFTRESBEN_001,Inheritance tax,calculations,Valuations,cloze_list,3,core,Y,iht:gifts_reservation_benefit,notes,1,142,168,199,199
-PF_ETH_PF__001,Ethics,proformas,Safeguards,proforma_drag,3,0,Y,0,0,0,142,168,199,199
-PF_ITNIC_PF_IR35_001,Income tax & NIC,proformas,IR35 deemed payment calculation,proforma_drag,3,core,Y,ir35;deemed_payment;nic,proforma,1,142,168,199,199
-PF_ITNIC_PF_EIS_001,Income tax & NIC,proformas,Tax efficient investments,proforma_drag,3,core,Y,eis;seis;vct,notes,1,142,168,199,199
-PF_ITNIC_PF_PSC_001,Income tax & NIC,proformas,Personal service companies and IR35,proforma_drag,3,core,Y,psc;ir35;sds;ddp,notes,1,142,168,199,199
-PF_ITNIC_PF_PSC_002,Income tax & NIC,proformas,Personal service companies and IR35,proforma_drag,3,core,Y,psc;ir35;sds;ddp,notes,1,142,168,199,199
-PF_ITNIC_PF_ITCOMP_001,Income tax & NIC,proformas,Income tax payable computation (individual),proforma_drag,3,core,Y,it-computation,image-proforma,1,142,168,199,199
+MCQ_ETH_DEF__001,Ethics,definitions,Fundamental principles,mcq_radio,3,0,Y,0,0,0,143,168,199,199
+MCQ_ETH_DEF__002,Ethics,definitions,Fundamental principles,mcq_radio,3,0,Y,0,0,0,143,168,199,199
+MCQ_ETH_DEF__003,Ethics,definitions,Fundamental principles,mcq_radio,3,0,Y,0,0,0,143,168,199,199
+MCQ_ETH_DEF__004,Ethics,definitions,Fundamental principles,mcq_radio,3,0,Y,0,0,0,143,168,199,199
+MCQ_ETH_DEF__005,Ethics,definitions,Fundamental principles,mcq_radio,3,0,Y,0,0,0,143,168,199,199
+MCQ_ITNIC_REQ_EIS_001,Income tax & NIC,requirements,Tax efficient investments,mcq_radio,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
+MCQ_ITNIC_CALC_EIS_001,Income tax & NIC,calculations,Tax efficient investments,mcq_radio,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
+MCQ_ITNIC_T_EIS_001,Income tax & NIC,treatments,Tax efficient investments,mcq_radio,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
+MCQ_ITNIC_P_PSC_001,Income tax & NIC,planning,Personal service companies and IR35,mcq_radio,3,core,Y,psc;ir35;employment_status,notes,1,143,168,199,199
+MCQ_ITNIC_T_PSC_001,Income tax & NIC,treatments,Personal service companies and IR35,mcq_radio,3,core,Y,ir35;small_entity;deemed_salary,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_PSC_001,Income tax & NIC,requirements,Personal service companies and IR35,mcq_radio,3,core,Y,ir35;sds;ddp;medium_large_entity,notes,1,143,168,199,199
+MCQ_ITNIC_DEF_SHS_001,Income tax & NIC,definitions,Employee share schemes,mcq_radio,3,core,Y,saye;share_schemes,notes,1,143,168,199,199
+MCQ_ITNIC_DEF_SHS_002,Income tax & NIC,definitions,Employee share schemes,mcq_radio,3,core,Y,csop;share_options,notes,1,143,168,199,199
+MCQ_ITNIC_T_SHS_001,Income tax & NIC,treatments,Employee share schemes,mcq_radio,3,core,Y,emi;discount;nic,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_001,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;company_rules,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_002,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;company_rules,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_003,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;company_rules,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_004,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;company_rules,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_005,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;company_rules,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_006,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;employee_rules,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_007,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;employee_rules,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_008,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;share_conditions,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_009,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;limits,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_010,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;limits,notes,1,143,168,199,199
+MCQ_ITNIC_REQ_EMI_011,Income tax & NIC,requirements,Employee share schemes,mcq_radio,3,core,Y,emi;limits,notes,1,143,168,199,199
+MCQ_ITNIC_P_EMI_001,Income tax & NIC,planning,Employee share schemes,mcq_radio,3,core,Y,emi;limits;interaction,notes,1,143,168,199,199
+MCQ_CGT_REQ_RESDOM_001,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,residency|auto_overseas,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_RESDOM_002,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,residency|auto_overseas,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_RESDOM_003,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,residency|auto_uk,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_RESDOM_004,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,residency|ties,notes_user,1,143,168,199,199
+MCQ_CGT_DEF_RESDOM_001,Capital gains,definitions,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,domicile|types,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_RESDOM_005,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,deemed_domicile|fukdr,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_RESDOM_006,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,deemed_domicile|long_term,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_RESDOM_007,Capital gains,requirements,"Residency, domicile and deemed domicile",mcq_radio,3,core,Y,deemed_domicile|april2017,notes_user,1,143,168,199,199
+MCQ_CGT_P_SPLITYR_001,Capital gains,planning,Split-year treatment,mcq_radio,3,core,Y,split_year|overview,notes_user,1,143,168,199,199
+MCQ_CGT_P_SPLITYR_002,Capital gains,planning,Split-year treatment,mcq_radio,3,core,Y,split_year|leaving,notes_user,1,143,168,199,199
+MCQ_CGT_P_SPLITYR_003,Capital gains,planning,Split-year treatment,mcq_radio,3,core,Y,split_year|leaving_spouse,notes_user,1,143,168,199,199
+MCQ_CGT_P_SPLITYR_004,Capital gains,planning,Split-year treatment,mcq_radio,3,core,Y,split_year|leaving_ties,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_SPLITYR_001,Capital gains,requirements,Split-year treatment,mcq_radio,3,core,Y,split_year|coming_home,notes_user,1,143,168,199,199
+MCQ_CGT_REQ_SPLITYR_002,Capital gains,requirements,Split-year treatment,mcq_radio,3,core,Y,split_year|coming_work,notes_user,1,143,168,199,199
+MCQ_CGT_P_SPLITYR_005,Capital gains,planning,Split-year treatment,mcq_radio,3,core,Y,split_year|returning,notes_user,1,143,168,199,199
+MCQ_IHT_REQ_DOMICILE_001,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|deemed_domicile|overview,image_notes,1,143,168,199,199
+MCQ_IHT_REQ_DOMICILE_002,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|three_year,image_notes,1,143,168,199,199
+MCQ_IHT_REQ_DOMICILE_003,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|fukdi,image_notes,1,143,168,199,199
+MCQ_IHT_REQ_DOMICILE_004,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|residence_15_20,image_notes,1,143,168,199,199
+MCQ_IHT_REQ_DOMICILE_005,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|residence_1of4,image_notes,1,143,168,199,199
+MCQ_IHT_REQ_DOMICILE_006,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|comparison,image_notes,1,143,168,199,199
+MCQ_IHT_REQ_DOMICILE_007,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|fukdi|elements,image_notes,1,143,168,199,199
+MCQ_IHT_REQ_DOMICILE_008,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),mcq_radio,3,core,Y,iht|trigger_time,image_notes,1,143,168,199,199
+MCQ_ITNIC_CALC_DISALLOW_001,Income tax & NIC,calculations,Disallowable trading expenses,mcq_radio,3,core,Y,disallowable;drawings,assistant_generated,1,143,168,199,199
+MCQ_ITNIC_CALC_DISALLOW_002,Income tax & NIC,calculations,Disallowable trading expenses,mcq_radio,3,core,Y,disallowable;wages,assistant_generated,1,143,168,199,199
+MCQ_ITNIC_CALC_DISALLOW_003,Income tax & NIC,calculations,Disallowable trading expenses,mcq_radio,3,core,Y,disallowable;capital,assistant_generated,1,143,168,199,199
+MCQ_ITNIC_CALC_DISALLOW_004,Income tax & NIC,calculations,Disallowable trading expenses,mcq_radio,3,core,Y,disallowable;donations,assistant_generated,1,143,168,199,199
+MCQ_ITNIC_CALC_DISALLOW_005,Income tax & NIC,calculations,Disallowable trading expenses,mcq_radio,3,core,Y,disallowable;medical,assistant_generated,1,143,168,199,199
+MCQ_ITNIC_CALC_DISALLOW_006,Income tax & NIC,calculations,Disallowable trading expenses,mcq_radio,3,core,Y,disallowable;bad_debt,assistant_generated,1,143,168,199,199
+MCQ_ITNIC_CALC_DISALLOW_007,Income tax & NIC,calculations,Disallowable trading expenses,mcq_radio,3,core,Y,disallowable;provision,assistant_generated,1,143,168,199,199
+MCQ_ITNIC_CALC_DISALLOW_008,Income tax & NIC,calculations,Disallowable trading expenses,mcq_radio,3,core,Y,disallowable;entertaining,assistant_generated,1,143,168,199,199
+MCQ_ITNIC_CALC_DISALLOW_009,Income tax & NIC,calculations,Disallowable trading expenses,mcq_radio,3,core,Y,disallowable;mixed_test,assistant_generated,1,143,168,199,199
+MCQ_ITNIC_DEF_BADGES_001,Income tax & NIC,definitions,Badges of trade,mcq_radio,3,core,Y,badges;profit_motive,assistant_generated,1,143,168,199,199
+MCQ_ITNIC_DEF_BADGES_002,Income tax & NIC,definitions,Badges of trade,mcq_radio,3,core,Y,badges;transactions,assistant_generated,1,143,168,199,199
+MCQ_ITNIC_DEF_BADGES_003,Income tax & NIC,definitions,Badges of trade,mcq_radio,3,core,Y,badges;similar_transactions,assistant_generated,1,143,168,199,199
+MCQ_ITNIC_DEF_BADGES_004,Income tax & NIC,definitions,Badges of trade,mcq_radio,3,core,Y,badges;interval,assistant_generated,1,143,168,199,199
+MCQ_ITNIC_DEF_BADGES_005,Income tax & NIC,definitions,Badges of trade,mcq_radio,3,core,Y,badges;acquisition,assistant_generated,1,143,168,199,199
+MCQ_ITNIC_DEF_BADGES_006,Income tax & NIC,definitions,Badges of trade,mcq_radio,3,core,Y,badges;purpose_recall,assistant_generated,1,143,168,199,199
+MCQ_ITNIC_DEF_BADGES_007,Income tax & NIC,definitions,Badges of trade,mcq_radio,3,core,Y,badges;supplementary_work,assistant_generated,1,143,168,199,199
+MCQ_ITNIC_DEF_BADGES_008,Income tax & NIC,definitions,Badges of trade,mcq_radio,3,core,Y,badges;finance,assistant_generated,1,143,168,199,199
+AB_ITNIC_REQ_INVSCHEME_001,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,eis|seis|vct,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_INVSCHEME_002,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,eis|conditions,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_INVSCHEME_003,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,eis|withdrawal,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_INVSCHEME_004,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,eis|cgt,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_INVSCHEME_005,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,seis|limits,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_INVSCHEME_006,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,seis|criteria,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_INVSCHEME_007,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,vct|relief,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_INVSCHEME_008,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,vct|cgt,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_INVSCHEME_009,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,ordering|reducers,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_INVSCHEME_010,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,timing|reinvestment,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_INVSCHEME_011,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,timing|seis,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_INVSCHEME_012,Income tax & NIC,requirements,Tax efficient investments,cloze_ab,3,0,Y,eis|claims,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_001,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,saye|limits,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_002,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,saye|term,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_003,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,saye|tax,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_004,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,saye|completion,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_005,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,saye|disposal,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_006,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,csop|shares,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_007,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,csop|eligibility,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_008,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,csop|population,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_009,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,csop|window,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_010,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,csop|cap,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_011,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,csop|disposal,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_012,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|purpose,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_013,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|company,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_014,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|company2,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_015,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|employee,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_016,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|ownership,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_017,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|sharetype,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_018,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|limits,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_019,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|interactions,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_020,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|targets,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_021,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|discount,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_022,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|nic|listed,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_023,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,emi|badr,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_024,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|structure,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_025,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|eligibility,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_026,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|company,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_027,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|free,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_028,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|partnership,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_029,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|matching,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_030,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|dividends,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_031,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|exit5,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_032,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|exit3,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_033,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,sip|exit35,user_notes,1,143,168,199,199
+AB_ITNIC_REQ_EMPSHARESCHEME_034,Income tax & NIC,requirements,Employee share schemes,cloze_ab,3,0,Y,compare|tax,user_notes,1,143,168,199,199
+AB_ITNIC_CALC_DISALLOW_001,Income tax & NIC,calculations,Disallowable trading expenses,cloze_ab,3,core,Y,disallowable;capital,assistant_generated,1,143,168,199,199
+AB_ITNIC_CALC_DISALLOW_002,Income tax & NIC,calculations,Disallowable trading expenses,cloze_ab,3,core,Y,disallowable;tax,assistant_generated,1,143,168,199,199
+AB_ITNIC_CALC_DISALLOW_003,Income tax & NIC,calculations,Disallowable trading expenses,cloze_ab,3,core,Y,disallowable;depreciation,assistant_generated,1,143,168,199,199
+AB_ITNIC_CALC_DISALLOW_004,Income tax & NIC,calculations,Disallowable trading expenses,cloze_ab,3,core,Y,disallowable;fines,assistant_generated,1,143,168,199,199
+LIST_ITNIC_REQ_EIS_001,Income tax & NIC,requirements,Tax efficient investments,cloze_list,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
+LIST_ITNIC_REQ_EIS_002,Income tax & NIC,requirements,Tax efficient investments,cloze_list,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
+LIST_ITNIC_REQ_PSC_001,Income tax & NIC,requirements,Personal service companies and IR35,cloze_list,3,core,Y,ir35;small_entity;deemed_salary,notes,1,143,168,199,199
+LIST_ITNIC_REQ_PSC_002,Income tax & NIC,requirements,Personal service companies and IR35,cloze_list,3,core,Y,ir35;medium_large_entity;sds;ddp,notes,1,143,168,199,199
+LIST_ITNIC_REQ_SHS_001,Income tax & NIC,requirements,Employee share schemes,cloze_list,3,core,Y,share_options;terminology,notes,1,143,168,199,199
+LIST_ITNIC_REQ_SHS_002,Income tax & NIC,requirements,Employee share schemes,cloze_list,3,core,Y,csop;emi;limits,notes,1,143,168,199,199
+LIST_ITNIC_REQ_SHS_003,Income tax & NIC,requirements,Employee share schemes,cloze_list,3,core,Y,sip;hold_period;withdrawal,notes,1,143,168,199,199
+LIST_CGT_REQ_SPLITYR_001,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|overview,notes_user,1,143,168,199,199
+LIST_CGT_REQ_SPLITYR_002,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|leaving,notes_user,1,143,168,199,199
+LIST_CGT_REQ_SPLITYR_003,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|live_abroad,notes_user,1,143,168,199,199
+LIST_CGT_REQ_SPLITYR_004,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|coming_home,notes_user,1,143,168,199,199
+LIST_CGT_REQ_SPLITYR_005,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|coming_work,notes_user,1,143,168,199,199
+LIST_CGT_REQ_SPLITYR_006,Capital gains,requirements,Split-year treatment,cloze_list,3,core,Y,split_year|returning,notes_user,1,143,168,199,199
+LIST_CGT_REQ_RESDOM_001,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,residency|auto_overseas,notes_user,1,143,168,199,199
+LIST_CGT_REQ_RESDOM_002,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,residency|auto_overseas,notes_user,1,143,168,199,199
+LIST_CGT_REQ_RESDOM_003,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,residency|auto_uk,notes_user,1,143,168,199,199
+LIST_CGT_REQ_RESDOM_004,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,residency|ties,notes_user,1,143,168,199,199
+LIST_CGT_REQ_RESDOM_005,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,domicile|types,notes_user,1,143,168,199,199
+LIST_CGT_REQ_RESDOM_006,Capital gains,requirements,"Residency, domicile and deemed domicile",cloze_list,3,core,Y,deemed_domicile|routes,notes_user,1,143,168,199,199
+LIST_IHT_REQ_DEEMDOM_001,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|overview,image_notes,1,143,168,199,199
+LIST_IHT_REQ_DEEMDOM_002,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|three_year,image_notes,1,143,168,199,199
+LIST_IHT_REQ_DEEMDOM_003,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|fukdi,image_notes,1,143,168,199,199
+LIST_IHT_REQ_DEEMDOM_004,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|uk_resident_route,image_notes,1,143,168,199,199
+LIST_IHT_REQ_DEEMDOM_005,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|comparison_windows,image_notes,1,143,168,199,199
+LIST_IHT_REQ_DEEMDOM_006,Inheritance tax,requirements,Deemed domicile (IHT vs CGT/IT),cloze_list,3,core,Y,iht|trigger_time,image_notes,1,143,168,199,199
+LIST_IHT_CALC_DTR_001,Inheritance tax,calculations,Double taxation relief,cloze_list,3,core,Y,iht:dtr,notes,1,143,168,199,199
+LIST_IHT_CALC_GIFTRESBEN_001,Inheritance tax,calculations,Valuations,cloze_list,3,core,Y,iht:gifts_reservation_benefit,notes,1,143,168,199,199
+LIST_ITNIC_CALC_LEASES_001,Income tax & NIC,calculations,Lease premiums,cloze_list,3,core,Y,lease_premium,notes,1,143,168,199,199
+LIST_ITNIC_CALC_LEASES_002,Income tax & NIC,calculations,Lease premiums,cloze_list,3,core,Y,lease_premium,notes,1,143,168,199,199
+LIST_ITNIC_DEF_BADGES_001,Income tax & NIC,definitions,Badges of trade,cloze_list,3,core,Y,badges;mapping,assistant_generated,1,143,168,199,199
+LIST_ITNIC_DEF_BADGES_002,Income tax & NIC,definitions,Badges of trade,cloze_list,3,core,Y,badges;mapping,assistant_generated,1,143,168,199,199
+PF_ETH_PF__001,Ethics,proformas,Safeguards,proforma_drag,3,0,Y,0,0,0,143,168,199,199
+PF_ITNIC_PF_IR35_001,Income tax & NIC,proformas,IR35 deemed payment calculation,proforma_drag,3,core,Y,ir35;deemed_payment;nic,proforma,1,143,168,199,199
+PF_ITNIC_PF_EIS_001,Income tax & NIC,proformas,Tax efficient investments,proforma_drag,3,core,Y,eis;seis;vct,notes,1,143,168,199,199
+PF_ITNIC_PF_PSC_001,Income tax & NIC,proformas,Personal service companies and IR35,proforma_drag,3,core,Y,psc;ir35;sds;ddp,notes,1,143,168,199,199
+PF_ITNIC_PF_PSC_002,Income tax & NIC,proformas,Personal service companies and IR35,proforma_drag,3,core,Y,psc;ir35;sds;ddp,notes,1,143,168,199,199
+PF_ITNIC_PF_ITCOMP_001,Income tax & NIC,proformas,Income tax payable computation (individual),proforma_drag,3,core,Y,it-computation,image-proforma,1,143,168,199,199
